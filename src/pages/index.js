@@ -27,15 +27,10 @@ const HomeOne = () => {
           <SliderOne />
           <ServiceTwo />
           <AboutTwo />
-          <VideoTwo />
-          <SubscribeForm />
-          <PortfolioHome />
           <FunfactOne />
           <TrustedClient />
-          <TeamCarousel />
           <ClientCarouselOne />
           <ParallaxOne />
-          <BlogHome />
           <CallToActionOne extraClassName="ready" />
           <Footer />
         </Layout>

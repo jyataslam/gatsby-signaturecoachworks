@@ -91,22 +91,22 @@ import sliderOne02 from "@/images/slider/1_2.jpg";
 export const SliderOneData = [
   {
     image: sliderOne01,
-    subTitle: "Regenerative Spine Procedure",
-    title: "DISCSEEL",
+    subTitle: "BEAUMONT'S PREMIER RV SHOP",
+    title: "SIGNATURE COACHWORKS",
     button: {
       label: "DISCOVER MORE",
       url: "/about",
     },
   },
-  {
-    image: sliderOne02,
-    subTitle: "WELCOME TO MEIPALY AGENCY",
-    title: "SMART WEB \n DESIGN AGENCY.",
-    button: {
-      label: "DISCOVER MORE",
-      url: "/about",
-    },
-  },
+  // {
+  //   image: sliderOne02,
+  //   subTitle: "WELCOME TO MEIPALY AGENCY",
+  //   title: "SMART WEB \n DESIGN AGENCY.",
+  //   button: {
+  //     label: "DISCOVER MORE",
+  //     url: "/about",
+  //   },
+  // },
 ];
 
 import sliderTwo01 from "@/images/slider/2_1.jpg";
@@ -515,34 +515,34 @@ export const ServiceHomeThreeData = {
 
 export const ServicePostTwoData = {
   sectionContent: {
-    title: "We design digital products that \n help grow businesses.",
-    subTitle: "Services we are offering",
+    title: "We pride ourselves on our workmanship and the skills of our team.",
+    subTitle: "Services we offer",
     text:
-      "We are committed to providing our customers with exceptional service \n while offering our employees the best training.",
+      "No matter your vehicle's needs, Signature Coachworks will get it the quality care it deserves. We work on all major and minor brands of coach - Prevost, Marathon, Country Coach, Tiffin, Newell, Liberty, Featherlite, and more. Our crew has experience with Crusair systems, PowerTech, Kohler, Dometic, Thetford, Winegard, Girard, ZipDee, and many other equipment and accessory manufacturers. Whatever it is, we'll fix it.",
   },
   posts: [
     {
-      title: "Website Development",
-      iconName: "mei-web-design",
+      title: "General Mechanical",
+      iconName: "mei-settings",
       url: "/service-details",
     },
     {
-      title: "Graphic Designing",
-      iconName: "mei-computer-graphic",
+      title: "Batteries",
+      iconName: "mei-production",
       url: "/service-details",
     },
     {
-      title: "Digital Marketing",
+      title: "Air Conditioning",
       iconName: "mei-development-1",
       url: "/service-details",
     },
     {
-      title: "SEo & Content Writing",
+      title: "Lighting & Electrical",
       iconName: "mei-development",
       url: "/service-details",
     },
     {
-      title: "App Development",
+      title: "Entertainment",
       iconName: "mei-app-development",
       url: "/service-details",
     },
@@ -581,19 +581,19 @@ export const ServicePostThreeData = {
 
 export const FunfactData = [
   {
-    title: "Projects Completed",
-    countNumber: 705,
+    title: "RVs Repaired",
+    countNumber: 802,
   },
   {
-    title: "Active Clients",
+    title: "Clients Jerked Off",
     countNumber: 480,
   },
   {
-    title: "Cups of Coffee",
+    title: "Blowjobs Given",
     countNumber: 626,
   },
   {
-    title: "Happy Clients",
+    title: "Michael Weilands",
     countNumber: 774,
   },
 ];
@@ -602,7 +602,7 @@ import trustClient01 from "@/images/home_1/4.jpg";
 
 export const TrustClientData = {
   image: trustClient01,
-  title: "We are trusted by more than 8900 clients",
+  title: "We are trusted by the industry's biggest leaders",
   text:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi-dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita-tion ullamco laboris nisi ut aliquip ex ea commodo.",
   url: "/about",
@@ -616,10 +616,10 @@ import ClientCarousel05 from "@/images/client/5.png";
 
 export const ClientCarouselData = {
   sectionContent: {
-    title: "they trust us",
-    subTitle: "our clients",
+    title: "brands we trust",
+    subTitle: "our brands",
     text:
-      "We are committed to providing our customers with exceptional service \n while offering our employees the best training.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi-dunt ut labore et dolore magna aliqua.",
   },
   items: [
     {
@@ -980,10 +980,10 @@ export const FeatureTabData = {
 
 export const ParallaxOneData = {
   iconName: "mei-team",
-  title: "Great things in business are never done by one person.",
-  specialText: "They’re done by a team of people.",
+  title: "Nick Weathers is such a cool guy.",
+  specialText: "Mike hopes one day he can be as cool as him.",
   text:
-    "We are committed to providing our customers with exceptional service while \n offering our employees the best training.",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi-dunt ut labore et dolore magna aliqua.",
 };
 
 export const PortfolioHomeData = {
@@ -1016,10 +1016,10 @@ import aboutTwo02 from "@/images/home_1/1.jpg";
 
 export const AboutTwoData = {
   sectionContent: {
-    title: "We are the Best Website agency in The World",
-    subTitle: "welcom to smart meipaly web agency",
+    title: "Southern California's Own Luxury Coach Experts",
+    subTitle: "Signature Coachworks",
     text:
-      "We are committed to providing our customers with exceptional service while offering our employees the best training. Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the 1500s.",
+      "Signature Coachworks is owned and operated by Nick Weathers and he has the biggest dong in all of Southern California. No other penis can compare to the sheer size and girth of his one-eyed snake. Give us a call and see for yourself.",
   },
   button: {
     label: "Learn More",

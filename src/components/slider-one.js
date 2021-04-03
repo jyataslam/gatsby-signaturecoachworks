@@ -9,12 +9,12 @@ SwiperCore.use([Autoplay, Navigation, EffectFade]);
 const SliderOne = () => {
   const mainSlideOptions = {
     slidesPerView: 1,
-    loop: true,
+    loop: false,
     effect: "fade",
-    navigation: {
-      nextEl: "#main-slider-next",
-      prevEl: "#main-slider-prev",
-    },
+    // navigation: {
+    //   nextEl: "#main-slider-next",
+    //   prevEl: "#main-slider-prev",
+    // },
     autoplay: {
       delay: 5000,
     },
@@ -42,12 +42,6 @@ const SliderOne = () => {
             </Container>
           </SwiperSlide>
         ))}
-        <div className="swiper-button-prev" id="main-slider-prev">
-          <i className="fa fa-angle-left"></i>
-        </div>
-        <div className="swiper-button-next" id="main-slider-next">
-          <i className="fa fa-angle-right"></i>
-        </div>
       </Swiper>
     </section>
   );
