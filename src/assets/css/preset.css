@@ -1,13 +1,4 @@
-/*
-Theme Name: Meipaly
-Theme URI: http://layerdrops.com/
-Author: Layerdrops
-Author URI: http://layerdrops.com/
-Description: Meipaly - Digital Services Agency HTML5 Responsive Template
-Version: 1.0
-License:
-License URI:
-*/
+
 
 /*=======================================================================
 [Table of contents]
@@ -39,6 +30,11 @@ body{
     transition: all ease 400ms;
     -webkit-transition: all ease 400ms;
     -moz-transition: all ease 400ms;
+}
+p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
 }
 
 /*------------------------------------------------------------------------------
@@ -158,7 +154,8 @@ ul li{
     background: #f5f6fa;
 }
 .sub_title{
-    font-size: 12px;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
     line-height: .8;
     font-weight: 400;
     color: #818181;

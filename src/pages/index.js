@@ -10,9 +10,11 @@ import FunfactOne from "@/components/funfact-one";
 import TrustedClient from "@/components/trusted-client";
 import PortfolioHome from "@/components/portfolio-home";
 import SubscribeForm from "@/components/subscribe-form";
+import TestimonialsOneCarousel from "@/components/testimonials-carousel";
 import ServiceTwo from "@/components/service-two";
 import AboutTwo from "@/components/about-two";
 import VideoTwo from "@/components/video-two";
+import GoogleMap from "@/components/google-map";
 import HeaderOne from "@/components/header-one";
 import SearchContextProvider from "@/context/search-context";
 import MenuContextProvider from "@/context/menu-context";
@@ -27,10 +29,10 @@ const HomeOne = () => {
           <SliderOne />
           <ServiceTwo />
           <AboutTwo />
-          <FunfactOne />
+          <TestimonialsOneCarousel />
           <TrustedClient />
-          <ClientCarouselOne />
           <ParallaxOne />
+          <GoogleMap extraClass="contact-page" />
           <CallToActionOne extraClassName="ready" />
           <Footer />
         </Layout>

@@ -60,8 +60,8 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-12 col-sm-12 text-center">
             <div className="copyright">
-              © copyright {new Date().getFullYear()} by{" "}
-              <a href="#">Layerdrops.com</a>
+              © copyright {new Date().getFullYear()}{" "}
+              <a href="#">Signature Coachworks, LLC</a>
             </div>
           </div>
         </div>

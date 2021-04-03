@@ -85,7 +85,7 @@ export const NavLinks = [
   },
 ];
 
-import sliderOne01 from "@/images/slider/1_1.jpg";
+import sliderOne01 from "@/images/hero/hero-bus-dark-min.jpg";
 import sliderOne02 from "@/images/slider/1_2.jpg";
 
 export const SliderOneData = [
@@ -94,8 +94,8 @@ export const SliderOneData = [
     subTitle: "BEAUMONT'S PREMIER RV SHOP",
     title: "SIGNATURE COACHWORKS",
     button: {
-      label: "DISCOVER MORE",
-      url: "/about",
+      label: "LEARN MORE",
+      url: "/service",
     },
   },
   // {
@@ -806,81 +806,33 @@ import testimonial03 from "@/images/home_1/t3.jpg";
 
 export const TestimonialsOneData = {
   sectionContent: {
-    subTitle: "our testimonials",
+    subTitle: "Featured Testimonials",
     title: "happy customers",
   },
   posts: [
     {
-      name: "Cecilia Colon",
+      name: "Trevor C",
       designation: "Director",
       image: testimonial01,
       content:
-        "This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. There are many variations of passages of available, but the majority have suffered alteration in some form by injected hum",
-      date: "25 nov, 2018",
+        "I had an electrical problem, they knew exactly where to look and fixes it in a jiffy. I was actually told that this Large professional shop was part of the marathon group. When marathon gave it up. this shop retained the very best employees and put together a terrific service company. Where ever you are coming from it is worth the time to come get your coach serviced and repaired here. I highly recommend this company to all Prevost owners.",
+      date: "Dec. 2020",
     },
     {
-      name: "Chase Hanson",
+      name: "James G",
       designation: "CO Founder",
       image: testimonial02,
       content:
-        "This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. There are many variations of passages of available, but the majority have suffered alteration in some form by injected hum",
-      date: "25 nov, 2018",
+        "We can’t say enough about these guys. Everything they do is top notch. They have the ability to service or repair absolutely anything on your RV and they quality of work is as good as factory or better. Stop in and meet them they are like a family. Please watch the YouTube video of the finished work. YouTube Andrew Steel $120,000 Prevost Makeover.",
+      date: "Oct. 2020",
     },
     {
-      name: "Mittie Flores",
+      name: "Larry F",
       designation: "Manager",
       image: testimonial03,
       content:
-        "This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. There are many variations of passages of available, but the majority have suffered alteration in some form by injected hum",
-      date: "25 nov, 2018",
-    },
-    {
-      name: "Carrie Sims",
-      designation: "Director",
-      image: testimonial01,
-      content:
-        "This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. There are many variations of passages of available, but the majority have suffered alteration in some form by injected hum",
-      date: "25 nov, 2018",
-    },
-    {
-      name: "Anne Stone",
-      designation: "CO Founder",
-      image: testimonial02,
-      content:
-        "This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. There are many variations of passages of available, but the majority have suffered alteration in some form by injected hum",
-      date: "25 nov, 2018",
-    },
-    {
-      name: "Hunter Brewer",
-      designation: "Manager",
-      image: testimonial03,
-      content:
-        "This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. There are many variations of passages of available, but the majority have suffered alteration in some form by injected hum",
-      date: "25 nov, 2018",
-    },
-    {
-      name: "Carrie Sims",
-      designation: "Director",
-      image: testimonial01,
-      content:
-        "This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. There are many variations of passages of available, but the majority have suffered alteration in some form by injected hum",
-      date: "25 nov, 2018",
-    },
-    {
-      name: "Anne Stone",
-      designation: "CO Founder",
-      image: testimonial02,
-      content:
-        "This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. There are many variations of passages of available, but the majority have suffered alteration in some form by injected hum",
-      date: "25 nov, 2018",
-    },
-    {
-      name: "Hunter Brewer",
-      designation: "Manager",
-      image: testimonial03,
-      content:
-        "This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. There are many variations of passages of available, but the majority have suffered alteration in some form by injected hum",
-      date: "25 nov, 2018",
+        "We had our RV refrigerator replaced with a residential refrigerator by Signature Coachworks. They did an excellent job of building a new cabinet for the new fridge to fit in and installation of the new fridge. I would definitely recommend them and use them again for any other work required on our coach.",
+      date: "April 2020",
     },
   ],
 };
@@ -1011,7 +963,7 @@ export const VideoTwoData = {
   },
 };
 
-import aboutTwo01 from "@/images/home_1/2.jpg";
+import aboutTwo01 from "@/images/about/mikey-min.jpg";
 import aboutTwo02 from "@/images/home_1/1.jpg";
 
 export const AboutTwoData = {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { TrustClientData } from "@/data";
+import "../assets/css/trusted-client.css";
 
 const TrustedClient = ({ extraClassName }) => {
   const { image, title, text, url } = TrustClientData;
