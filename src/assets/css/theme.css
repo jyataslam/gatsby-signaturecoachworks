@@ -41,14 +41,16 @@
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 5;
+  /* z-index: 5; */
+  z-index: 999;
   background: transparent;
   padding: 39px 40px 0 45px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 .logo {
   text-align: left;
-  padding: 0 0 39px;
+  /* padding: 0 0 39px; */
+  padding: 0;
 }
 .logo img {
   max-width: 100%;
@@ -1524,6 +1526,9 @@
 .testimonial_2 {
   background: url(../images/bg/7.jpg) no-repeat center center / cover;
 }
+.regular_padding {
+  padding-bottom: 120px !important;
+}
 .testimoniTab {
   position: relative;
 }
@@ -1598,6 +1603,7 @@
   letter-spacing: 1.2px;
   margin: 0;
   text-transform: uppercase;
+  padding-bottom: 1rem;
 }
 .testi_con {
   position: relative;

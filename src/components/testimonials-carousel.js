@@ -8,7 +8,7 @@ import "../assets/css/testimonials.css";
 
 SwiperCore.use([Autoplay, Thumbs, Pagination]);
 
-const TestimonialsOneCarousel = () => {
+const TestimonialsOneCarousel = ({ regularPadding }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   const testimonialsThumbOptions = {
@@ -35,7 +35,7 @@ const TestimonialsOneCarousel = () => {
   };
   const { sectionContent, posts } = TestimonialsOneData;
   return (
-    <section className="commonSection testimonial_2">
+    <section className={`commonSection testimonial_2 ${regularPadding}`}>
       <Container>
         <Row className="testimoniTab">
           <Col lg={5}>
@@ -55,7 +55,7 @@ const TestimonialsOneCarousel = () => {
                       </span>
                       <div className="author_detail">
                         <h5>{name}</h5>
-                        {/* <h6>{designation}</h6> */}
+                        <h6>{designation}</h6>
                       </div>
                     </a>
                   </div>

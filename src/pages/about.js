@@ -17,16 +17,13 @@ const AboutPage = () => {
   return (
     <MenuContextProvider>
       <SearchContextProvider>
-        <Layout PageTitle="About Us Page">
+        <Layout PageTitle="About">
           <HeaderOne />
           <PageBanner title="About Us" name="About" />
           <AboutOne />
-          <TestimonialsOneCarousel />
-          <SubscribeForm />
-          <TeamCarousel />
-          <VideoOne />
+          <TestimonialsOneCarousel regularPadding="regular_padding" />
           <FeatureTabOne />
-          <CallToActionOne extraClassName="ready" />
+          <CallToActionOne extraClassName="ready_2" buttonClass="red_bg" />
           <Footer />
         </Layout>
       </SearchContextProvider>

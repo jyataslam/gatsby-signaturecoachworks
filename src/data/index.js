@@ -1,5 +1,5 @@
-import logoLight from "@/images/logo.png";
-import logoDark from "@/images/logo2.png";
+import logoLight from "@/images/logo/placeholder-logo.png";
+import logoDark from "@/images/logo/placeholder-logo.png";
 
 export const LogoImage = {
   light: logoLight,
@@ -32,20 +32,24 @@ export const NavLinks = [
   {
     name: "Services",
     url: "/service",
-    subItems: [
-      {
-        name: "Services",
-        url: "/service",
-      },
-      {
-        name: "Service Details",
-        url: "/service-details",
-      },
-    ],
+    // subItems: [
+    //   {
+    //     name: "Services",
+    //     url: "/service",
+    //   },
+    //   {
+    //     name: "Service Details",
+    //     url: "/service-details",
+    //   },
+    // ],
   },
   {
     name: "Inventory",
     url: "/inventory",
+  },
+  {
+    name: "Storage",
+    url: "/storage",
   },
   {
     name: "Portfolio",
@@ -719,13 +723,13 @@ import aboutOne02 from "@/images/about/2.jpg";
 
 export const AboutOneData = {
   sectionContent: {
-    title: "build better website alot quicker with meipaly agency",
-    subTitle: "get to know us",
+    title: "Premier Coach Repair\nServing Southern CA",
+    subTitle: "Signature Coachworks",
   },
   gallery: [aboutOne01, aboutOne02],
   counter: {
-    title: "Company Started",
-    number: 1990,
+    title: "Founded In",
+    number: 2009,
   },
 };
 
@@ -869,9 +873,9 @@ export const SubscribeFormData = {
   },
 };
 
-import testimonial01 from "@/images/home_1/t1.jpg";
-import testimonial02 from "@/images/home_1/t2.jpg";
-import testimonial03 from "@/images/home_1/t3.jpg";
+import testimonial01 from "@/images/logo/google_logo.webp";
+import testimonial02 from "@/images/logo/google_logo.webp";
+import testimonial03 from "@/images/logo/google_logo.webp";
 
 export const TestimonialsOneData = {
   sectionContent: {
@@ -881,7 +885,7 @@ export const TestimonialsOneData = {
   posts: [
     {
       name: "Trevor C",
-      designation: "Director",
+      designation: "Google",
       image: testimonial01,
       content:
         "I had an electrical problem, they knew exactly where to look and fixes it in a jiffy. I was actually told that this Large professional shop was part of the marathon group. When marathon gave it up. this shop retained the very best employees and put together a terrific service company. Where ever you are coming from it is worth the time to come get your coach serviced and repaired here. I highly recommend this company to all Prevost owners.",
@@ -889,7 +893,7 @@ export const TestimonialsOneData = {
     },
     {
       name: "James G",
-      designation: "CO Founder",
+      designation: "Google",
       image: testimonial02,
       content:
         "We can’t say enough about these guys. Everything they do is top notch. They have the ability to service or repair absolutely anything on your RV and they quality of work is as good as factory or better. Stop in and meet them they are like a family. Please watch the YouTube video of the finished work. YouTube Andrew Steel $120,000 Prevost Makeover.",
@@ -897,7 +901,7 @@ export const TestimonialsOneData = {
     },
     {
       name: "Larry F",
-      designation: "Manager",
+      designation: "Google",
       image: testimonial03,
       content:
         "We had our RV refrigerator replaced with a residential refrigerator by Signature Coachworks. They did an excellent job of building a new cabinet for the new fridge to fit in and installation of the new fridge. I would definitely recommend them and use them again for any other work required on our coach.",
@@ -913,86 +917,86 @@ import featureTab03 from "@/images/home_1/c3.jpg";
 export const FeatureTabData = {
   sectionContent: {
     title: "why choose us",
-    subTitle: "our benefits",
+    subTitle: "about us",
     text:
-      "We are committed to providing our customers with exceptional service while\n offering our employees the best training.",
+      "Someone was in the pod. The tracks go off in this direction. Look, sir -- droids.",
   },
   posts: [
     {
-      title: "Latest technology",
+      title: "Header One",
       content:
-        "There are many variations of passages of lorem ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. ",
+        "Well, that's the trick, isn't it? And it's going to cost you something extra. Ten thousand in advance. Ten thousand? We could almost buy our own ship for that! But who's going to fly it, kid! You? You bet I could. I'm not such a bad pilot myself!",
       image: featureTab01,
       lists: [
         {
-          item: "Self-contained, state-of-the-art time clock",
+          item: "Mike Weiland is very fun and cool",
         },
         {
-          item: "Scalability of up to 500 employees per time clock",
+          item: "Mike Weiland is very fun and cool",
         },
         {
-          item: "The ability to connect up to 32 time clocks",
+          item: "Mike Weiland is very fun and cool",
         },
         {
-          item: "Employee self-enrollment",
+          item: "Mike Weiland is very fun and cool",
         },
         {
-          item: "Payroll integration",
+          item: "Mike Weiland is very fun and cool",
         },
         {
-          item: "Built-in backup camera to verify failed punches",
+          item: "Mike Weiland is very fun and cool",
         },
       ],
     },
     {
-      title: "Awesome Support",
+      title: "Header Two",
       content:
         "There are many variations of passages of lorem ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. ",
       image: featureTab02,
       lists: [
         {
-          item: "Self-contained, state-of-the-art time clock",
+          item: "Nick Weathers is very fun and cool",
         },
         {
-          item: "Scalability of up to 500 employees per time clock",
+          item: "Nick Weathers is very fun and cool",
         },
         {
-          item: "The ability to connect up to 32 time clocks",
+          item: "Nick Weathers is very fun and cool",
         },
         {
-          item: "Employee self-enrollment",
+          item: "Nick Weathers is very fun and cool",
         },
         {
-          item: "Payroll integration",
+          item: "Nick Weathers is very fun and cool",
         },
         {
-          item: "Built-in backup camera to verify failed punches",
+          item: "Nick Weathers is very fun and cool",
         },
       ],
     },
     {
-      title: "1 Click demo install",
+      title: "Header Three",
       content:
         "There are many variations of passages of lorem ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. ",
       image: featureTab03,
       lists: [
         {
-          item: "Self-contained, state-of-the-art time clock",
+          item: "Habib Behain is very fun and cool",
         },
         {
-          item: "Scalability of up to 500 employees per time clock",
+          item: "Habib Behain is very fun and cool",
         },
         {
-          item: "The ability to connect up to 32 time clocks",
+          item: "Habib Behain is very fun and cool",
         },
         {
-          item: "Employee self-enrollment",
+          item: "Habib Behain is very fun and cool",
         },
         {
-          item: "Payroll integration",
+          item: "Habib Behain is very fun and cool",
         },
         {
-          item: "Built-in backup camera to verify failed punches",
+          item: "Habib Behain is very fun and cool",
         },
       ],
     },

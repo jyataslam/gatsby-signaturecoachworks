@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const PageBanner = ({ title, name }) => {
   return (
@@ -8,7 +9,7 @@ const PageBanner = ({ title, name }) => {
           <div className="col-lg-12">
             <div className="banner_content text-center">
               <h4>
-                <a href="/">home</a> - {name}
+                <Link to="/">home</Link> - {name}
               </h4>
               <h2>{title}</h2>
             </div>
