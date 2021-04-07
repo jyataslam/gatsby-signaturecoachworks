@@ -91,7 +91,7 @@ import sliderOne02 from "@/images/slider/1_2.jpg";
 export const SliderOneData = [
   {
     image: sliderOne01,
-    subTitle: "BEAUMONT'S PREMIER RV SHOP",
+    subTitle: "Premier Coach Repair",
     title: "SIGNATURE COACHWORKS",
     button: {
       label: "LEARN MORE",
@@ -168,24 +168,24 @@ export const SliderThreeData = [
 ];
 
 export const ContactInfosBlock = {
-  subTitle: "our offices",
-  title: "offices near you",
+  subTitle: "Our Location",
+  title: "101 California Ave.\nBeaumont, CA 92223",
   description:
-    "We are committed to providing our customers with exceptional service while \n offering our employees the best training.",
+    "Our shop can be found in Chandler's Stellar Airpark, near the intersection of McClintock Dr and Chandler Blvd. \nWe're right off the 202 and 101.",
 };
 
 export const ContactInfosList = [
   {
-    title: "austin",
+    title: "Beaumont",
     infos: [
       {
-        name: "22 Texas West Hills",
+        name: "101 California Ave",
       },
       {
-        name: "needhelp@meipaly.com",
+        name: "nick@specialtycoachworks.com",
       },
       {
-        name: "666 888 000",
+        name: "(714)867-5309",
       },
     ],
   },
@@ -515,11 +515,76 @@ export const ServiceHomeThreeData = {
 
 export const ServicePostTwoData = {
   sectionContent: {
-    title: "We pride ourselves on our workmanship and the skills of our team.",
+    title:
+      "We service all makes and conversions.\nNo coach too big and no coach too small.",
     subTitle: "Services we offer",
     text:
       "No matter your vehicle's needs, Signature Coachworks will get it the quality care it deserves. We work on all major and minor brands of coach - Prevost, Marathon, Country Coach, Tiffin, Newell, Liberty, Featherlite, and more. Our crew has experience with Crusair systems, PowerTech, Kohler, Dometic, Thetford, Winegard, Girard, ZipDee, and many other equipment and accessory manufacturers. Whatever it is, we'll fix it.",
+    secondaryText:
+      "Common Conversions that we service include but are not limited to: Marathon Royale, Newmar, Featherlite, Newell, Country Coach and Tiffin.\n\nWe also provide complete paint and body work. We have a very experienced and talented staff that will make your coach look new again.",
   },
+  services: [
+    {
+      title: "AV Upgrades",
+    },
+    {
+      title: "Engine Services",
+    },
+    {
+      title: "Remodeling",
+    },
+    {
+      title: "Detailing",
+    },
+    {
+      title: "HDTV",
+    },
+    {
+      title: "Hardwood Flooring",
+    },
+    {
+      title: "Cabinetry",
+    },
+    {
+      title: "Generator Service",
+    },
+    {
+      title: "Koni Shocks",
+    },
+    {
+      title: "Polishing",
+    },
+    {
+      title: "GPS",
+    },
+    {
+      title: "Tile/Carpet",
+    },
+    {
+      title: "Air Conditioning",
+    },
+    {
+      title: "Satellite",
+    },
+    {
+      title: "Upholstery",
+    },
+    {
+      title: "Electrical",
+    },
+    {
+      title: "Crestron",
+    },
+    {
+      title: "Silverleaf",
+    },
+    {
+      title: "Awnings",
+    },
+    {
+      title: "All Chassis Work",
+    },
+  ],
   posts: [
     {
       title: "General Mechanical",
@@ -602,9 +667,9 @@ import trustClient01 from "@/images/home_1/4.jpg";
 
 export const TrustClientData = {
   image: trustClient01,
-  title: "We are trusted by the industry's biggest leaders",
+  title: "Storage",
   text:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi-dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita-tion ullamco laboris nisi ut aliquip ex ea commodo.",
+    "We provide both indoor and outdoor storage options for our customers. Each storage parking has optional shore power as well. We also provide concierge services for clients including: Pick Up or delivery, stocking your coach, wash and dump services and cleaning. We are your one stop for your coach.",
   url: "/about",
 };
 
@@ -930,12 +995,18 @@ export const FeatureTabData = {
   ],
 };
 
+export const SalesData = {
+  title: "Sales",
+  text:
+    "Signature Coachworks offers consignment sales.\nAll sales coaches come with a full inspection of the coach from our facility. Upgrades and remodels are easily completed onsite.",
+};
+
 export const ParallaxOneData = {
   iconName: "mei-team",
-  title: "Nick Weathers is such a cool guy.",
-  specialText: "Mike hopes one day he can be as cool as him.",
-  text:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi-dunt ut labore et dolore magna aliqua.",
+  title: "Signature Coachworks offers consignment sales.",
+  specialText:
+    "All sales coaches come with a full inspection of the coach from our facility. Upgrades and remodels are easily completed onsite.",
+  text: "",
 };
 
 export const PortfolioHomeData = {
@@ -968,14 +1039,14 @@ import aboutTwo02 from "@/images/home_1/1.jpg";
 
 export const AboutTwoData = {
   sectionContent: {
-    title: "Southern California's Own Luxury Coach Experts",
+    title: "Premier Coach Repair",
     subTitle: "Signature Coachworks",
     text:
-      "Signature Coachworks is owned and operated by Nick Weathers and he has the biggest dong in all of Southern California. No other penis can compare to the sheer size and girth of his one-eyed snake. Give us a call and see for yourself.",
+      "Signature Coachworks was formed in 2009 by a group of experienced technicians from all facets of the RV and Motorcoach world. Signature Coachworks has become a household name among many high end conversion coach owners. We are known for our attention to detail, craftsmanship and vast knowledge of all coach systems.",
   },
   button: {
     label: "Learn More",
-    url: "#",
+    url: "/about",
   },
   gallery: [aboutTwo01, aboutTwo02],
 };

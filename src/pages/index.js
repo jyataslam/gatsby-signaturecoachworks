@@ -10,9 +10,11 @@ import FunfactOne from "@/components/funfact-one";
 import TrustedClient from "@/components/trusted-client";
 import PortfolioHome from "@/components/portfolio-home";
 import SubscribeForm from "@/components/subscribe-form";
+import ContactInfos from "@/components/contact-infos";
 import TestimonialsOneCarousel from "@/components/testimonials-carousel";
 import ServiceTwo from "@/components/service-two";
 import AboutTwo from "@/components/about-two";
+import Sales from "@/components/sales";
 import VideoTwo from "@/components/video-two";
 import GoogleMap from "@/components/google-map";
 import HeaderOne from "@/components/header-one";
@@ -27,13 +29,15 @@ const HomeOne = () => {
         <Layout PageTitle="Home One">
           <HeaderOne />
           <SliderOne />
-          <ServiceTwo />
+          <CallToActionOne extraClassName="ready_2" buttonClass="red_bg" />
           <AboutTwo />
+          <ServiceTwo />
+          <ContactInfos />
           <TestimonialsOneCarousel />
           <TrustedClient />
           <ParallaxOne />
+          <PortfolioHome />
           <GoogleMap extraClass="contact-page" />
-          <CallToActionOne extraClassName="ready" />
           <Footer />
         </Layout>
       </SearchContextProvider>

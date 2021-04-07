@@ -2,10 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ServicePostTwoData } from "@/data";
 import ServiceCardTwo from "@/components/service-card-two";
+import "@/css/service.css";
 
 const ServiceTwo = () => {
-  const { sectionContent, posts } = ServicePostTwoData;
-  const { title, subTitle, text } = sectionContent;
+  const { sectionContent, posts, services } = ServicePostTwoData;
+  const { title, subTitle, text, secondaryText } = sectionContent;
+  console.log(services);
   return (
     <section className="service_section commonSection">
       <Container>
@@ -16,13 +18,29 @@ const ServiceTwo = () => {
             <p className="sec_desc color_aaa">{text}</p>
           </Col>
         </Row>
-        <Row className="custom_column">
+        <Row className="service_row">
+          {services.map((item, index) => (
+            <Col key={index} lg={4} sm={12}>
+              <div>
+                <h3 className="icon_box_1 service_item_new">{item.title}</h3>
+              </div>
+            </Col>
+          ))}
+        </Row>
+        <Row>
+          <Col lg={12} className="text-center">
+            <p className="sec_desc color_aaa secondary_text_desc">
+              {secondaryText}
+            </p>
+          </Col>
+        </Row>
+        {/* <Row className="custom_column">
           {posts.map((data, index) => (
             <Col key={index} lg={3} md={6} sm={12}>
               <ServiceCardTwo data={data} />
             </Col>
           ))}
-        </Row>
+        </Row> */}
       </Container>
     </section>
   );
