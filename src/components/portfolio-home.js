@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import SectionTitle from "./section-title";
 import PortfolioCard from "@/components/portfolio-card";
 import { PortfolioHomeData, PortfolioData } from "@/data";
+import { Link } from "gatsby";
 
 const PortfolioHome = () => {
   const { sectionContent } = PortfolioHomeData;
@@ -22,6 +23,11 @@ const PortfolioHome = () => {
                   <PortfolioCard data={post} />
                 </Col>
               ))}
+              <Col lg={12} className="text-center">
+                <Link className="common_btn red_bg" to="/inventory">
+                  <span>See More</span>
+                </Link>
+              </Col>
             </Row>
           </div>
         </Row>

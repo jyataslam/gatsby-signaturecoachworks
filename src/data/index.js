@@ -44,6 +44,10 @@ export const NavLinks = [
     ],
   },
   {
+    name: "Inventory",
+    url: "/inventory",
+  },
+  {
     name: "Portfolio",
     url: "/portfolio",
     subItems: [
@@ -1011,10 +1015,9 @@ export const ParallaxOneData = {
 
 export const PortfolioHomeData = {
   sectionContent: {
-    title: "work showcase",
-    subTitle: "our portfolio",
-    text:
-      "We are committed to providing our customers with exceptional service while\n offering our employees the best training.",
+    title: "Current Inventory",
+    subTitle: "Signature Coachworks",
+    text: "Inventory placeholder text: What should I put here?",
   },
 };
 

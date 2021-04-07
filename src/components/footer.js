@@ -13,10 +13,9 @@ const Footer = () => {
                 <img src={light} alt="" />
               </a>
               <p>
-                Welcome to our web design agency. Lorem ipsum is simply free
-                text dolor sit amet consectetur adipisicing elit. Tempore
-                corrupti temporibus fuga earum asperiores, alias excepturi sit
-                mpedit fugit laudantium.
+                Signature Coachworks has become a household name among many high
+                end conversion coach owners. We are known for our attention to
+                detail, craftsmanship and vast knowledge of all coach systems.
               </p>
             </aside>
           </div>
@@ -24,13 +23,18 @@ const Footer = () => {
             <aside className="widget contact_widgets">
               <h3 className="widget_title">contact</h3>
               <p>
-                66 Broklyn Street, New York
+                101 CALIFORNIA AVE.
                 <br />
-                United States of America
+                BEAUMONT, CA 92223
               </p>
-              <p>P: 666 888 000</p>
+              <a href="tel:+19518458056" className="color_aaa">
+                P: (951)845-8056
+              </a>
               <p>
-                E: <a href="#">needhelp@meipaly.com</a>
+                E:{" "}
+                <a href="mailto:info@signaturecoachworks.com">
+                  info@signaturecoachworks.com
+                </a>
               </p>
             </aside>
           </div>
