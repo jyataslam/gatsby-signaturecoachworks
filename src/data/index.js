@@ -10,20 +10,20 @@ export const NavLinks = [
   {
     name: "Home",
     url: "/",
-    subItems: [
-      {
-        name: "Home 01",
-        url: "/",
-      },
-      {
-        name: "Home 02",
-        url: "/index-2",
-      },
-      {
-        name: "Home 03",
-        url: "/index-3",
-      },
-    ],
+    // subItems: [
+    //   {
+    //     name: "Home 01",
+    //     url: "/",
+    //   },
+    //   {
+    //     name: "Home 02",
+    //     url: "/index-2",
+    //   },
+    //   {
+    //     name: "Home 03",
+    //     url: "/index-3",
+    //   },
+    // ],
   },
   {
     name: "About",
@@ -52,45 +52,49 @@ export const NavLinks = [
     url: "/storage",
   },
   {
-    name: "Portfolio",
-    url: "/portfolio",
-    subItems: [
-      {
-        name: "Portfolio 01",
-        url: "/portfolio",
-      },
-      {
-        name: "Portfolio Details",
-        url: "/portfolio-details",
-      },
-    ],
-  },
-  {
-    name: "Blog",
-    url: "/blog",
-    subItems: [
-      {
-        name: "Blog 01",
-        url: "/blog",
-      },
-      {
-        name: "Blog 02",
-        url: "/blog-2",
-      },
-      {
-        name: "Blog 03",
-        url: "/blog-3",
-      },
-      {
-        name: "Blog Details",
-        url: "/blog-single",
-      },
-    ],
+    name: "Sales",
+    url: "/sales",
   },
   {
     name: "Contact",
     url: "/contact",
   },
+  // {
+  //   name: "Portfolio",
+  //   url: "/portfolio",
+  //   subItems: [
+  //     {
+  //       name: "Portfolio 01",
+  //       url: "/portfolio",
+  //     },
+  //     {
+  //       name: "Portfolio Details",
+  //       url: "/portfolio-details",
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "Blog",
+  //   url: "/blog",
+  //   subItems: [
+  //     {
+  //       name: "Blog 01",
+  //       url: "/blog",
+  //     },
+  //     {
+  //       name: "Blog 02",
+  //       url: "/blog-2",
+  //     },
+  //     {
+  //       name: "Blog 03",
+  //       url: "/blog-3",
+  //     },
+  //     {
+  //       name: "Blog Details",
+  //       url: "/blog-single",
+  //     },
+  //   ],
+  // },
 ];
 
 import sliderOne01 from "@/images/hero/hero-bus-dark-min.jpg";
@@ -1100,3 +1104,27 @@ export const CallToActionTwoData = [
     url: "/contact",
   },
 ];
+
+export const InventoryData = {
+  images: {
+    featuredimg: featureTwo01,
+    gallery: [
+      {
+        img: featureTwo01,
+      },
+      {
+        img: featureTwo01,
+      },
+      {
+        img: featureTwo01,
+      },
+      {
+        img: featureTwo01,
+      },
+    ],
+  },
+  data: {
+    title: "Princeton Truck",
+    description: "lorem ipsum whatever placeholder stuff",
+  },
+};

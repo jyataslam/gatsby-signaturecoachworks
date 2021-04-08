@@ -12,3 +12,37 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   });
 };
+
+exports.createPages = async ({ actions: { createPage }, graphql }) => {
+  const data = await graphql(`
+    {
+      allInventoryJson {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
+    }
+  `);
+  console.log("gatsby node console", data.data.allInventoryJson.edges);
+
+  if (data.errors) {
+    console.log("error retrieving data", data.errors);
+    return;
+  }
+
+  const inventoryTemplate = require.resolve(
+    "./src/pages/inventory-template.js"
+  );
+
+  data.data.allInventoryJson.edges.forEach(edge => {
+    createPage({
+      path: `/inventory/${edge.node.slug}/`,
+      component: inventoryTemplate,
+      context: {
+        slug: edge.node.slug,
+      },
+    });
+  });
+};

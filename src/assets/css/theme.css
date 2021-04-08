@@ -3541,7 +3541,7 @@ textarea.input-form:focus {
 .main-slider .container {
   position: relative;
   z-index: 10;
-  padding-top: 115px;
+  /* padding-top: 115px; */
 }
 
 .main-slider__title {

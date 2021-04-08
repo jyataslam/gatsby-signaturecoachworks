@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "rv-one",
+    "title": "RV One Title",
+    "price": "250,000",
+    "image": "./images/rv-one/inventory-placeholder.webp"
+  },
+  {
+    "slug": "rv-two",
+    "title": "RV Two Title",
+    "price": "650,999",
+    "image": "./images/rv-one/inventory-placeholder.webp"
+  }
+]

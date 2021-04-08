@@ -5,7 +5,7 @@ import PortfolioCard from "@/components/portfolio-card";
 import { PortfolioHomeData, PortfolioData } from "@/data";
 import { Link } from "gatsby";
 
-const PortfolioHome = () => {
+const InventoryFull = () => {
   const { sectionContent } = PortfolioHomeData;
   return (
     <section className="commonSection porfolio">
@@ -18,18 +18,11 @@ const PortfolioHome = () => {
         <Row id="Grid">
           <div className="custom">
             <Row>
-              {PortfolioData.filter((post, index) => index < 6).map(
-                (post, index) => (
-                  <Col lg={4} md={6} sm={12} key={index}>
-                    <PortfolioCard data={post} />
-                  </Col>
-                )
-              )}
-              <Col lg={12} className="text-center">
-                <Link className="common_btn red_bg" to="/inventory">
-                  <span>All Inventory</span>
-                </Link>
-              </Col>
+              {PortfolioData.map((post, index) => (
+                <Col lg={4} md={6} sm={12} key={index}>
+                  <PortfolioCard data={post} />
+                </Col>
+              ))}
             </Row>
           </div>
         </Row>
@@ -38,4 +31,4 @@ const PortfolioHome = () => {
   );
 };
 
-export default PortfolioHome;
+export default InventoryFull;
