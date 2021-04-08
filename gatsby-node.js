@@ -33,7 +33,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   }
 
   const inventoryTemplate = require.resolve(
-    "./src/pages/inventory-template.js"
+    "./src/templates/inventory-template.js"
   );
 
   data.data.allInventoryJson.edges.forEach(edge => {
