@@ -14,7 +14,7 @@
 /*------------------------------------------------------------------------------
 / 1. Font Settings
 ------------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&family=Nunito+Sans:400&display=swap');
 
 body, html{
     margin: 0;
@@ -35,6 +35,7 @@ p {
     font-weight: 300;
     font-size: 1.4rem;
     letter-spacing: 1px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 /*------------------------------------------------------------------------------
@@ -130,7 +131,8 @@ ul li{
     padding: 28px 40.5px;
 }
 .common_btn.red_bg:after{
-    background: #e62b4a;
+    /* background: #e62b4a; */
+    background: #0066a5;
 }
 .common_btn.red_bg:hover:after{
     width: 100%;
@@ -174,7 +176,8 @@ ul li{
     white-space: pre-line;
 }
 .red_color{
-    color: #e62b4a;
+    /* color: #e62b4a; */
+    color: #0066a5;
 }
 .white{
     color: #ffffff;

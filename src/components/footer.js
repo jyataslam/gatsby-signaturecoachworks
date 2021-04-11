@@ -2,7 +2,7 @@ import React from "react";
 import { LogoImage } from "@/data";
 
 const Footer = () => {
-  const { light } = LogoImage;
+  const { footer } = LogoImage;
   return (
     <footer className="footer_1">
       <div className="container">
@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="col-lg-5 col-sm-6 col-md-5">
             <aside className="widget aboutwidget">
               <a href="/">
-                <img src={light} alt="" />
+                <img src={footer} alt="signature coachworks logo" />
               </a>
               <p>
                 Signature Coachworks has become a household name among many high
@@ -54,7 +54,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#">
-                    <i className="fa fa-youtube-play"></i>Youtube
+                    <i className="fa fa-instagram"></i>Instagram
                   </a>
                 </li>
               </ul>
@@ -65,7 +65,7 @@ const Footer = () => {
           <div className="col-lg-12 col-sm-12 text-center">
             <div className="copyright">
               © copyright {new Date().getFullYear()}{" "}
-              <a href="#">Signature Coachworks, LLC</a>
+              <a href="#">Signature Coachworks</a>
             </div>
           </div>
         </div>

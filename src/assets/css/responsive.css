@@ -13,6 +13,12 @@
 / 1. Mobile Responsive. Responsive For Extra Small Device like: Mobile, Iphone etc
 --------------------------------------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 767px) {
+  p {
+    font-size: 1.2rem;
+  }
+  .hero-logo {
+    width: 100%;
+  }
   .mainmenu {
     padding: 0;
     margin: 0 -15px;
@@ -105,9 +111,11 @@
 
   .header_01 {
     padding: 39px 0 0;
+    padding: 10px;
   }
   .navigator {
     padding-top: 0;
+    padding: 0;
   }
   .navigator a.search {
     margin-right: 10px;
@@ -485,6 +493,9 @@
     right: 20px;
     bottom: 20px;
   }
+  .main-slider .swiper-slide-active .image-layer {
+    background-position: left;
+  }
 }
 
 /*------------------------------------------------------------------------------------
@@ -509,6 +520,12 @@
 / 2. Responsive For Small Device.  like: Tab
 -----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 990px) {
+  .main-slider .swiper-slide-active .image-layer {
+    background-position: left;
+  }
+  .hero-logo {
+    width: 100%;
+  }
   .rev_slider .tp-leftarrow.me_arrows,
   .rev_slider .tp-rightarrow.me_arrows {
     width: 60px;
@@ -525,6 +542,7 @@
   .header_01 {
     padding-left: 0;
     padding-right: 0;
+    padding: 20px;
   }
   .mainmenu ul li {
     padding: 0 12px 53px;
@@ -600,6 +618,9 @@
   }
   .abci_content p {
     margin-bottom: 47px;
+  }
+  .navigator {
+    padding: 0;
   }
   .testimonial_content {
     padding: 0;

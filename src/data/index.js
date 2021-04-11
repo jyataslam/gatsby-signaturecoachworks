@@ -1,9 +1,11 @@
-import logoLight from "@/images/logo/placeholder-logo.png";
-import logoDark from "@/images/logo/placeholder-logo.png";
+import logoLight from "@/images/logo/logo-blue-min.png";
+import logoDark from "@/images/logo/logo-white.png";
+import logoFooter from "@/images/logo/signature-logo-blue-min.png";
 
 export const LogoImage = {
   light: logoLight,
   dark: logoDark,
+  footer: logoFooter,
 };
 
 export const NavLinks = [
@@ -97,12 +99,14 @@ export const NavLinks = [
   // },
 ];
 
-import sliderOne01 from "@/images/hero/hero-bus-dark-min.jpg";
+import sliderOne01 from "@/images/bg/white_bg.webp";
 import sliderOne02 from "@/images/slider/1_2.jpg";
+import sliderOneLogo from "@/images/logo/logo-blue-min.png";
 
 export const SliderOneData = [
   {
     image: sliderOne01,
+    logo: sliderOneLogo,
     subTitle: "Premier Coach Repair",
     title: "SIGNATURE COACHWORKS",
     button: {
@@ -878,7 +882,7 @@ export const SubscribeFormData = {
 };
 
 import testimonial01 from "@/images/logo/google_logo.webp";
-import testimonial02 from "@/images/logo/google_logo.webp";
+import testimonial02 from "@/images/logo/yelp-logo.png";
 import testimonial03 from "@/images/logo/google_logo.webp";
 
 export const TestimonialsOneData = {
@@ -896,11 +900,11 @@ export const TestimonialsOneData = {
       date: "Dec. 2020",
     },
     {
-      name: "James G",
-      designation: "Google",
+      name: "Rich S",
+      designation: "Yelp",
       image: testimonial02,
       content:
-        "We can’t say enough about these guys. Everything they do is top notch. They have the ability to service or repair absolutely anything on your RV and they quality of work is as good as factory or better. Stop in and meet them they are like a family. Please watch the YouTube video of the finished work. YouTube Andrew Steel $120,000 Prevost Makeover.",
+        "Another 5 star exceptional experience. I have always used Roger at Signature Coachworks for simple as well as technical repairs over the past 5 years and always had great results. Recently I decided to get a quote on some interior flooring and some paint repairs. Roger and his team did a exceptional job on the new flooring, a perfect paint match and repair and a few other electrical fixes.",
       date: "Oct. 2020",
     },
     {
@@ -1024,7 +1028,7 @@ export const ParallaxOneData = {
 export const PortfolioHomeData = {
   sectionContent: {
     title: "Current Inventory",
-    subTitle: "Signature Coachworks",
+    subTitle: "Sales",
     text: "Inventory placeholder text: What should I put here?",
   },
 };

@@ -41,7 +41,7 @@ const HeaderOne = () => {
       id="header"
     >
       <Container fluid>
-        <Row className="justify-content-between">
+        <Row className="justify-content-between align-items-center">
           <Col className="col-6" lg={2} md={3} sm={3}>
             <div className="logo">
               <Link to="/">

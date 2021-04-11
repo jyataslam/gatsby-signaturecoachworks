@@ -1,0 +1,12 @@
+.hero-logo {
+    display: block;
+    margin: 0 auto 2rem;
+    width: 850px;
+}
+
+@media screen and (max-width: 1028px) {
+    .hero-logo {
+        width: 100%;
+        padding-top: 1rem;
+    }
+}

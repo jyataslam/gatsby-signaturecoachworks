@@ -88,11 +88,15 @@ const PopupMenu = () => {
           <div className="row">
             <div className="col-lg-6 col-sm-12 col-xs-12 text-center text-md-left">
               <ul className="footer__contacts">
-                <li>Phone: 666 888 000</li>
-                <li>Email: needhelp@meipaly.com</li>
                 <li>
-                  Address: 66 Broklyn Street, New York United States of America
+                  <a href="tel:+19518458056">Phone: (951)845-8056</a>
                 </li>
+                <li>
+                  <a href="mailto:info@signaturecoachworks.com">
+                    Email: info@signaturecoachworks.com
+                  </a>
+                </li>
+                <li>Address: 101 California Ave. Beaumont, CA 92223</li>
               </ul>
             </div>
             <div className="col-lg-6 col-sm-12">
@@ -110,7 +114,7 @@ const PopupMenu = () => {
                   </li>
                   <li>
                     <a href="#">
-                      <i className="fa fa-youtube-play"></i>Youtube
+                      <i className="fa fa-instagram"></i>Instagram
                     </a>
                   </li>
                 </ul>

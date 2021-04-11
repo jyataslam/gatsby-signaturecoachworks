@@ -33,6 +33,25 @@
 30. Color Preset
 */
 
+.ab_img2:after {
+  border-color: #0066a5 !important;
+}
+#testimonial_2_thumb .swiper-slide a span::after, .testimoniTab ul li a span:after {
+  background: #0066a5 !important;
+}
+.testimonial_content .testi_icon {
+  background: #0066a5 !important;
+}
+.testimonial_content h2 span {
+  color: #0066a5 !important;
+}
+.singlefolio:after {
+  background: #0066a5da !important;
+}
+.showit {
+  display: none;
+}
+
 /*----------------------------------------------------
 / 1. Header 01
 ------------------------------------------------------*/
@@ -46,6 +65,12 @@
   background: transparent;
   padding: 39px 40px 0 45px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.align-items-center {
+  align-items: center;
 }
 .logo {
   text-align: left;
@@ -55,6 +80,7 @@
 .logo img {
   max-width: 100%;
   height: auto;
+  width: 150px;
 }
 .mainmenu {
   position: relative;
@@ -69,21 +95,29 @@
   line-height: 0.8;
   padding: 0 20px 53px;
   position: relative;
+  padding-bottom: 0;
 }
 .mainmenu ul li a {
   display: block;
-  color: #fff;
+  /* color: inherit; */
+  color: black;
   font-size: 16px;
   line-height: 0.8;
   text-transform: uppercase;
   position: relative;
 }
+.fixedHeader .mainmenu ul li a:hover {
+  color: rgb(46, 46, 46);
+}
+.fixedHeader .mainmenu ul li a:hover:after {
+  background: rgb(32, 32, 32);
+}
 .mainmenu ul li a:after {
   position: absolute;
   width: 0;
-  height: 1px;
+  height: 2px;
   content: "";
-  background: #fff;
+  background: #000;
   left: 0;
   right: 0;
   bottom: -5px;
@@ -93,7 +127,7 @@
 }
 .mainmenu ul > li.active > a,
 .mainmenu ul li a:hover {
-  color: #fff;
+  color: black;
 }
 .mainmenu ul > li.active > a:after,
 .mainmenu ul li a:hover:after {
@@ -158,7 +192,7 @@
 }
 .navigator a {
   display: inline-block;
-  color: #fff;
+  color: #000;
   line-height: 0.8;
   font-size: 25px;
   margin: 0;
@@ -190,7 +224,8 @@
   color: #e62b4a;
 }
 .fixedHeader {
-  background: #000;
+  background: white;
+  color: black;
   left: 0;
   position: fixed;
   right: 0;
@@ -2947,6 +2982,9 @@ textarea.input-form:focus {
   margin: 0;
   padding-left: 0;
 }
+.footer__contacts li a {
+  color: #818181;
+}
 .popUp_social {
   position: absolute;
   right: 0;
@@ -2978,6 +3016,10 @@ textarea.input-form:focus {
   font-size: 16px;
   color: #fff;
   margin-right: 10px;
+}
+.show-overlay-nav .popup.popup__menu.popup__menu img {
+  width: 200px;
+  height: auto;
 }
 .popUp_social ul li a:hover {
   color: #fff;
@@ -3043,9 +3085,10 @@ textarea.input-form:focus {
   overflow: hidden;
 }
 .popup.popup__menu {
-  background-image: url(../images/line-maker.svg);
-  background-repeat: repeat;
-  background-position: center center;
+  /* background-image: url(../images/line-maker.svg); */
+  background: white;
+  /* background-repeat: repeat;
+  background-position: center center; */
   padding: 0;
 }
 .popup.popup__menu .popup-inner {
@@ -3079,7 +3122,7 @@ textarea.input-form:focus {
   display: block;
 }
 .dl-menu__wrap ul li a {
-  color: #fff;
+  color: #333;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 0.8;
@@ -3587,7 +3630,8 @@ textarea.input-form:focus {
 }
 
 .main-slider__subtext {
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   font-size: 20px;
   text-transform: uppercase;
   margin: 0;
