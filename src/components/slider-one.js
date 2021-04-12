@@ -8,22 +8,11 @@ SwiperCore.use([Autoplay, Navigation, EffectFade]);
 import "@/css/hero.css";
 
 const SliderOne = () => {
-  const mainSlideOptions = {
-    slidesPerView: 1,
-    loop: false,
-    effect: "fade",
-    // navigation: {
-    //   nextEl: "#main-slider-next",
-    //   prevEl: "#main-slider-prev",
-    // },
-    autoplay: {
-      delay: 5000,
-    },
-  };
+  const { subTitle, title, button, logo } = SliderOneData[0];
 
   return (
-    <section className="main-slider">
-      <Swiper {...mainSlideOptions}>
+    <section className="hero">
+      {/* <Swiper {...mainSlideOptions}>
         {SliderOneData.map(
           ({ image, subTitle, title, button, logo }, index) => (
             <SwiperSlide key={index}>
@@ -35,7 +24,7 @@ const SliderOne = () => {
                 <Row>
                   <Col lg={12} className="text-center">
                     <p className="main-slider__subtext">{subTitle}</p>
-                    {/* <h3 className="main-slider__title">{title}</h3> */}
+                    <h3 className="main-slider__title">{title}</h3>
                     <img
                       src={logo}
                       alt={title}
@@ -50,7 +39,18 @@ const SliderOne = () => {
             </SwiperSlide>
           )
         )}
-      </Swiper>
+          </Swiper> */}
+      <Container>
+        <Row>
+          <Col lg={12} className="text-center">
+            <p className="hero-subtext">{subTitle}</p>
+            <img src={logo} alt={title} className="hero-logo" />
+            <Link to={button.url} className={`common_btn red_bg`}>
+              <span>{button.label}</span>
+            </Link>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };

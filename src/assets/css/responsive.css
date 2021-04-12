@@ -13,8 +13,18 @@
 / 1. Mobile Responsive. Responsive For Extra Small Device like: Mobile, Iphone etc
 --------------------------------------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 767px) {
+  .footer_1 .copyright a {
+    line-height: 1.2;
+  }
+  .testi_con p {
+    font-size: 20px;
+    line-height: 36px;
+  }
   p {
     font-size: 1.2rem;
+  }
+  .hero {
+    background-position: left;
   }
   .hero-logo {
     width: 100%;
@@ -139,10 +149,10 @@
     top: 20px;
   }
   .dl-menu__wrap ul li {
-    margin: 5px 0;
+    margin: 14px 0;
   }
   .dl-menu__wrap ul li a {
-    font-size: 14px;
+    font-size: 26px;
   }
   .footer__contacts {
     text-align: center;
@@ -196,7 +206,7 @@
   .sec_title {
     font-size: 34px;
     letter-spacing: 1px;
-    line-height: 50px;
+    line-height: 39px;
   }
   .sec_title br {
     display: none;
@@ -279,13 +289,20 @@
   .singleTM:hover .team_social {
     left: 40px;
   }
+  .testimonial {
+    background-attachment: scroll;
+  }
   .testimonial_content {
     padding: 0;
   }
   .testimonial_content h2 {
-    font-size: 36px;
+    /* font-size: 36px;
     letter-spacing: 1px;
-    line-height: 50px;
+    line-height: 50px; */
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 39px;
+    font-weight: bold;
   }
   .testimonial_content p br {
     display: none;
@@ -520,6 +537,9 @@
 / 2. Responsive For Small Device.  like: Tab
 -----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 990px) {
+  .hero {
+    background-position: left;
+  }
   .main-slider .swiper-slide-active .image-layer {
     background-position: left;
   }

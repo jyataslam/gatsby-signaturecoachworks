@@ -491,6 +491,13 @@ export const PortfolioDetailsData = {
   ],
 };
 
+export const StoragePageData = {
+  title: "Storage",
+  subTitle: "Signature Coachworks",
+  text:
+    "We provide both indoor and outdoor storage options for our customers. Each storage parking has optional shore power as well. We also provide concierge services for clients including: Pick Up or delivery, stocking your coach, wash and dump services and cleaning. We are your one stop for your coach.",
+};
+
 export const ServicePostData = [
   {
     title: "Modren Design",

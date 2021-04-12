@@ -1,0 +1,17 @@
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    padding-bottom: 5rem;
+    text-align: center;
+    padding: 200px 20px 100px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+a {
+    margin-top: 1rem;
+}

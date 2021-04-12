@@ -16,11 +16,14 @@ const ContactForm = () => {
         <div className="row">
           <div className="col-lg-8 offset-lg-2 col-sm-12 col-md-10 offset-md-1">
             <form
-              action="#"
-              method="post"
+              action="/success"
+              method="POST"
               className="contactFrom"
               id="contactForm"
+              name="contact"
+              data-netlify="true"
             >
+              <input type="hidden" name="contact" value="contact" />
               <div className="row">
                 <div className="col-lg-6 col-sm-6">
                   <input
