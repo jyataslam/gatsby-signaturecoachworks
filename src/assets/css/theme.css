@@ -313,8 +313,11 @@
 /*----------------------------------------------------
 / 3. Services Section
 ------------------------------------------------------*/
-.service_section {
+/* .service_section {
   background: url(../images/bg/1.jpg) no-repeat center center / cover;
+} */
+.service_section {
+  background: url(../images/bg/black_bg-min.jpeg) no-repeat top center / cover;
 }
 .icon_box_1 {
   display: inline-block;
@@ -749,6 +752,7 @@
   line-height: 63px;
   text-transform: uppercase;
   margin: 0 0 43px;
+  font-weight: bold;
 }
 .abci_content p {
   margin-bottom: 55px;
@@ -1289,6 +1293,9 @@
 }
 .ready_2 {
   background: url(../images/bg/6.jpg) no-repeat center center / cover;
+}
+.ready_2 {
+  background: url(../images/bg/black_bg-min.jpeg) no-repeat top center / cover;
 }
 .ready_2 .sec_title {
   margin: 0;
@@ -3631,6 +3638,7 @@ textarea.input-form:focus {
 
 .main-slider__subtext {
   /* color: #fff; */
+  font-family: 'Montserrat', sans-serif;
   color: #000;
   font-size: 20px;
   text-transform: uppercase;
