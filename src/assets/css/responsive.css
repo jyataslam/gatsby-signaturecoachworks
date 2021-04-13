@@ -12,7 +12,20 @@
 /*------------------------------------------------------------------------------------
 / 1. Mobile Responsive. Responsive For Extra Small Device like: Mobile, Iphone etc
 --------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 426px) {
+  .header_01 {
+    top: 0;
+  }
+  .fixedHeader {
+    top: 0;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
+  .ready_2 .sec_title {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
   .footer_1 .copyright a {
     line-height: 1.2;
   }
@@ -22,9 +35,13 @@
   }
   p {
     font-size: 1.2rem;
+    line-height: 1.5;
   }
-  .hero {
-    background-position: left;
+  .hero:before {
+    background-position-x: left !important;
+  }
+  .hero:after {
+    background-position-x: left !important;
   }
   .hero-logo {
     width: 100%;
@@ -537,8 +554,18 @@
 / 2. Responsive For Small Device.  like: Tab
 -----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 990px) {
+  .ready_2 .sec_title {
+    font-size: 30px;
+    line-height: 65px;
+  }
   .hero {
     background-position: left;
+  }
+  .hero:before {
+    background-position-x: left !important;
+  }
+  .hero:after {
+    background-position-x: left !important;
   }
   .main-slider .swiper-slide-active .image-layer {
     background-position: left;
@@ -584,6 +611,7 @@
   }
   .sec_title {
     font-size: 40px;
+    line-height: 45px;
   }
   .sec_title br {
     display: none;

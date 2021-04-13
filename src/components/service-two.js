@@ -7,7 +7,6 @@ import "@/css/service.css";
 const ServiceTwo = () => {
   const { sectionContent, posts, services } = ServicePostTwoData;
   const { title, subTitle, text, secondaryText } = sectionContent;
-  console.log(services);
   return (
     <section className="service_section commonSection">
       <Container>
@@ -20,7 +19,7 @@ const ServiceTwo = () => {
         </Row>
         <Row className="service_row">
           {services.map((item, index) => (
-            <Col key={index} lg={4} sm={12}>
+            <Col key={index} lg={4} md={6} sm={12}>
               <div>
                 <h3 className="icon_box_1 service_item_new">{item.title}</h3>
               </div>

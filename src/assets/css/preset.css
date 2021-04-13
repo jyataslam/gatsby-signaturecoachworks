@@ -15,7 +15,7 @@
 / 1. Font Settings
 ------------------------------------------------------------------------------*/
 /* @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&family=Fjalla+One&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400&family=Montserrat&family=Lato:wght@400&display=swap');
 
 body, html{
     margin: 0;
@@ -36,7 +36,8 @@ p {
     /* font-weight: 300; */
     font-size: 1.4rem;
     letter-spacing: 1px;
-    font-family: 'Quattrocento', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 /*------------------------------------------------------------------------------
@@ -173,7 +174,8 @@ ul li{
 .sec_title{
     /* font-size: 50px; */
     font-size: 41px;
-    line-height: 60px;
+    /* line-height: 60px; */
+    line-height: 48px;
     /* font-weight: 400; */
     font-weight: bold;
     color: #000;

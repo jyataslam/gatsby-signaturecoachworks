@@ -58,7 +58,7 @@
 .header_01 {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 30px;
   width: 100%;
   /* z-index: 5; */
   z-index: 999;
@@ -229,7 +229,7 @@
   left: 0;
   position: fixed;
   right: 0;
-  top: 0;
+  top: 30px;
   width: 100%;
   z-index: 999;
   border: none;
@@ -1294,11 +1294,12 @@
 .ready .common_btn {
   padding: 28px 42.5px;
 }
-.ready_2 {
+/* .ready_2 {
   background: url(../images/bg/6.jpg) no-repeat center center / cover;
-}
+} */
 .ready_2 {
   background: url(../images/bg/black_bg-min.jpeg) no-repeat top center / cover;
+  padding: 45px 1.5vw;
 }
 .ready_2 .sec_title {
   margin: 0;
@@ -1307,6 +1308,11 @@
   padding: 28px 42.5px;
   background: #fff;
   color: #000;
+}
+.calltoaction_flexcol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*----------------------------------------------------

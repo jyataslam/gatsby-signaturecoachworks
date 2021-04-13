@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@/components/layout";
+import Quote from "@/components/quote";
 import CallToActionOne from "@/components/call-to-action-one";
 import Footer from "@/components/footer";
 import ParallaxOne from "@/components/parallax-1";
@@ -20,14 +21,15 @@ const HomeOne = () => {
     <MenuContextProvider>
       <SearchContextProvider>
         <Layout PageTitle="Home One">
+          <Quote />
           <HeaderOne />
           <SliderOne />
-          <CallToActionOne extraClassName="ready_2" buttonClass="red_bg" />
           <AboutTwo />
           <ServiceTwo />
           <ContactInfos />
           <TestimonialsOneCarousel />
           <TrustedClient />
+          <CallToActionOne extraClassName="ready_2" buttonClass="red_bg" />
           <ParallaxOne />
           <PortfolioHome />
           <GoogleMap extraClass="contact-page" />

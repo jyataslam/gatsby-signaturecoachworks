@@ -26,6 +26,7 @@ export const query = graphql`
 const InventoryTemplate = ({ data }) => {
   const { inventoryJson } = data;
   const image = getImage(data.inventoryJson.image);
+  console.log("inventory image", image);
   return (
     <MenuContextProvider>
       <SearchContextProvider>

@@ -8,11 +8,14 @@ import PageBanner from "@/components/page-banner";
 import SearchContextProvider from "@/context/search-context";
 import MenuContextProvider from "@/context/menu-context";
 import HeaderOne from "@/components/header-one";
+import Quote from "@/components/quote";
+
 const ContactPage = () => {
   return (
     <MenuContextProvider>
       <SearchContextProvider>
         <Layout PageTitle="Contact Page">
+          <Quote />
           <HeaderOne />
           <PageBanner title="Contact Us" name="Contact" />
           <ContactForm />

@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import { Swiper, SwiperSlide } from "swiper/react";
+import BackgroundImage from "gatsby-background-image";
 import SwiperCore, { Autoplay, Navigation, EffectFade } from "swiper";
 import { Col, Container, Row } from "react-bootstrap";
 import { SliderOneData } from "@/data";
@@ -9,37 +10,38 @@ import "@/css/hero.css";
 
 const SliderOne = () => {
   const { subTitle, title, button, logo } = SliderOneData[0];
+  const data = useStaticQuery(
+    graphql`
+      query {
+        shopImage: file(relativePath: { eq: "white_bg.webp" }) {
+          id
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 4160) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `
+  );
+
+  const shopImage = data.shopImage.childImageSharp.fluid;
 
   return (
-    <section className="hero">
-      {/* <Swiper {...mainSlideOptions}>
-        {SliderOneData.map(
-          ({ image, subTitle, title, button, logo }, index) => (
-            <SwiperSlide key={index}>
-              <div
-                className="image-layer"
-                style={{ backgroundImage: `url(${image})` }}
-              ></div>
-              <Container>
-                <Row>
-                  <Col lg={12} className="text-center">
-                    <p className="main-slider__subtext">{subTitle}</p>
-                    <h3 className="main-slider__title">{title}</h3>
-                    <img
-                      src={logo}
-                      alt={title}
-                      className="hero-logo main-slider__title"
-                    />
-                    <Link to={button.url} className={`common_btn red_bg`}>
-                      <span>{button.label}</span>
-                    </Link>
-                  </Col>
-                </Row>
-              </Container>
-            </SwiperSlide>
-          )
-        )}
-          </Swiper> */}
+    // <section className="hero">
+    //   <Container>
+    //     <Row>
+    //       <Col lg={12} className="text-center">
+    //         <p className="hero-subtext">{subTitle}</p>
+    //         <img src={logo} alt={title} className="hero-logo" />
+    //         <Link to={button.url} className={`common_btn red_bg`}>
+    //           <span>{button.label}</span>
+    //         </Link>
+    //       </Col>
+    //     </Row>
+    //   </Container>
+    // </section>
+    <BackgroundImage fluid={shopImage} className="hero">
       <Container>
         <Row>
           <Col lg={12} className="text-center">
@@ -51,7 +53,7 @@ const SliderOne = () => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </BackgroundImage>
   );
 };
 

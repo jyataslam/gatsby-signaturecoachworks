@@ -4,9 +4,7 @@ import Layout from "@/components/layout";
 import PageBanner from "@/components/page-banner";
 import AboutOne from "@/components/about-one";
 import CallToActionOne from "@/components/call-to-action-one";
-import TeamCarousel from "@/components/team-carousel";
-import VideoOne from "@/components/video-one";
-import SubscribeForm from "@/components/subscribe-form";
+import Quote from "@/components/quote";
 import TestimonialsOneCarousel from "@/components/testimonials-carousel";
 import FeatureTabOne from "@/components/feature-tab-1";
 import HeaderOne from "@/components/header-one";
@@ -18,6 +16,7 @@ const AboutPage = () => {
     <MenuContextProvider>
       <SearchContextProvider>
         <Layout PageTitle="About">
+          <Quote />
           <HeaderOne />
           <PageBanner title="About Us" name="About" />
           <AboutOne />
