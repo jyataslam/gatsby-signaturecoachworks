@@ -13,7 +13,7 @@ const SliderOne = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        shopImage: file(relativePath: { eq: "white_bg.webp" }) {
+        shopImage: file(relativePath: { eq: "hero-interior-min.jpg" }) {
           id
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {

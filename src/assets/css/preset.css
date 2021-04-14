@@ -15,7 +15,7 @@
 / 1. Font Settings
 ------------------------------------------------------------------------------*/
 /* @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&family=Fjalla+One&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400&family=Montserrat&family=Lato:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Montserrat&family=Lato:wght@400&display=swap');
 
 body, html{
     margin: 0;
@@ -26,7 +26,7 @@ body{
     color: #818181;
     letter-spacing: 0.64px;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     transition: all ease 400ms;
     -webkit-transition: all ease 400ms;
@@ -34,10 +34,10 @@ body{
 }
 p {
     /* font-weight: 300; */
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 /*------------------------------------------------------------------------------
@@ -47,8 +47,8 @@ h1, h2, h3, h4, h5 h6{
     color: #000000;
     font-weight: 400;
     margin: 0 0 15px;
-    letter-spacing: 0;
-    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0 !important;
+    font-family: 'Poppins', sans-serif;
 }
 a{
     color: #000;

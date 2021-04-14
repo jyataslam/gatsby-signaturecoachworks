@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { LogoImage } from "@/data";
 
 const Footer = () => {
@@ -9,9 +10,9 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-5 col-sm-6 col-md-5">
             <aside className="widget aboutwidget">
-              <a href="/">
+              <Link to="/">
                 <img src={footer} alt="signature coachworks logo" />
-              </a>
+              </Link>
               <p>
                 Signature Coachworks has become a household name among many high
                 end conversion coach owners. We are known for our attention to

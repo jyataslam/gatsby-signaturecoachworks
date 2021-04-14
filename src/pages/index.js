@@ -15,6 +15,7 @@ import HeaderOne from "@/components/header-one";
 import SearchContextProvider from "@/context/search-context";
 import MenuContextProvider from "@/context/menu-context";
 import SliderOne from "@/components/slider-one";
+import SliderTwo from "@/components/slider-two";
 
 const HomeOne = () => {
   return (
@@ -23,7 +24,7 @@ const HomeOne = () => {
         <Layout PageTitle="Home One">
           <Quote />
           <HeaderOne />
-          <SliderOne />
+          <SliderTwo />
           <AboutTwo />
           <ServiceTwo />
           <ContactInfos />

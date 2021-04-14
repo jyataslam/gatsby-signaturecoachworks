@@ -132,11 +132,13 @@ import sliderTwo03 from "@/images/slider/2_3.jpg";
 export const SliderTwoData = [
   {
     image: sliderTwo01,
-    subTitle: "WELCOME TO MEIPALY AGENCY",
-    title: "DIGITAL\nMARKETING\nAGENCY.",
+    subTitle: "Collision repair, body work, and professional RV renovations -",
+    subTitleTwo: "all in one convenient location.",
+    title: "Full Service RV & Auto",
+    titleTwo: "Body Repair Shop",
     button: {
-      label: "DISCOVER MORE",
-      url: "/about",
+      label: "our services",
+      url: "/service",
     },
   },
   {
@@ -250,10 +252,9 @@ export const ContactInfosList = [
 ];
 
 export const ContactFormTitle = {
-  subTitle: "Contact with us",
-  title: "write us a message",
-  description:
-    "We are committed to providing our customers with exceptional service while \n      offering our employees the best training. ",
+  subTitle: "Contact Us",
+  title: "Get a free quote \nor send us a message",
+  description: "Let us know how we can help!",
 };
 
 import blogImage1 from "@/images/blog/1.jpg";
@@ -410,40 +411,40 @@ import portfolio06 from "@/images/portfolio/6.jpg";
 
 export const PortfolioData = [
   {
-    title: "Design Styles",
-    categories: ["all", "graphic"],
+    title: "Provost",
+    price: "1,450,000",
     image: portfolio01,
-    url: "/portfolio-details",
+    url: "/inventory/rv-one",
   },
   {
-    title: "Design Styles",
-    categories: ["all", "graphic"],
+    title: "Provost",
+    price: "1,450,000",
     image: portfolio02,
-    url: "/portfolio-details",
+    url: "/inventory/rv-one",
   },
   {
-    title: "Design Styles",
-    categories: ["all", "graphic"],
+    title: "Provost",
+    price: "1,450,000",
     image: portfolio03,
-    url: "/portfolio-details",
+    url: "/inventory/rv-one",
   },
   {
-    title: "Design Styles",
-    categories: ["all", "graphic"],
+    title: "Provost",
+    price: "1,450,000",
     image: portfolio04,
-    url: "/portfolio-details",
+    url: "/inventory/rv-one",
   },
   {
-    title: "Design Styles",
-    categories: ["all", "graphic"],
+    title: "Provost",
+    price: "1,450,000",
     image: portfolio05,
-    url: "/portfolio-details",
+    url: "/inventory/rv-one",
   },
   {
-    title: "Design Styles",
-    categories: ["all", "graphic"],
+    title: "Provost",
+    price: "1,450,000",
     image: portfolio06,
-    url: "/portfolio-details",
+    url: "/inventory/rv-one",
   },
 ];
 

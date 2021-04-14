@@ -18,7 +18,7 @@ const InventoryPage = () => {
           <HeaderOne />
           <PageBanner title="Inventory" name="Inventory" />
           <InventoryFull />
-          <CallToActionOne extraClassName="ready" buttonClass="red_bg" />
+          <CallToActionOne extraClassName="ready_2" buttonClass="red_bg" />
           <Footer />
         </Layout>
       </SearchContextProvider>

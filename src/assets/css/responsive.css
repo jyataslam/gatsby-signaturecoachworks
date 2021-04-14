@@ -37,12 +37,12 @@
     font-size: 1.2rem;
     line-height: 1.5;
   }
-  .hero:before {
+  /* .hero:before {
     background-position-x: left !important;
   }
   .hero:after {
     background-position-x: left !important;
-  }
+  } */
   .hero-logo {
     width: 100%;
   }
@@ -561,12 +561,12 @@
   .hero {
     background-position: left;
   }
-  .hero:before {
+  /* .hero:before {
     background-position-x: left !important;
   }
   .hero:after {
     background-position-x: left !important;
-  }
+  } */
   .main-slider .swiper-slide-active .image-layer {
     background-position: left;
   }

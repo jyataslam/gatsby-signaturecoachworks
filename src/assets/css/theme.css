@@ -99,8 +99,7 @@
 }
 .mainmenu ul li a {
   display: block;
-  /* color: inherit; */
-  color: black;
+  color: inherit;
   font-size: 16px;
   line-height: 0.8;
   text-transform: uppercase;
@@ -117,7 +116,7 @@
   width: 0;
   height: 2px;
   content: "";
-  background: #000;
+  background: white;
   left: 0;
   right: 0;
   bottom: -5px;
@@ -127,7 +126,7 @@
 }
 .mainmenu ul > li.active > a,
 .mainmenu ul li a:hover {
-  color: black;
+  color: inherit;
 }
 .mainmenu ul > li.active > a:after,
 .mainmenu ul li a:hover:after {

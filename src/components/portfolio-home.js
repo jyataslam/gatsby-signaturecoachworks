@@ -18,7 +18,7 @@ const PortfolioHome = () => {
         <Row id="Grid">
           <div className="custom">
             <Row>
-              {PortfolioData.filter((post, index) => index < 6).map(
+              {PortfolioData.filter((post, index) => index < 3).map(
                 (post, index) => (
                   <Col lg={4} md={6} sm={12} key={index}>
                     <PortfolioCard data={post} />
