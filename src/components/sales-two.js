@@ -48,7 +48,7 @@ const AboutTwo = () => {
           </Col>
           <Col lg={6} md={12} sm={12} className="sales__container">
             <div className="sales__container-inner">
-              <h3>Available upgrades on coach sales:</h3>
+              <h3>Available upgrades on all coach sales:</h3>
               <ul>
                 <li>Put Upgrade Here</li>
                 <li>Put Upgrade Here</li>

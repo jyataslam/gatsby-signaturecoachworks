@@ -10,6 +10,12 @@
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 991px) {
+    .sales__container {
+        padding-top: 4rem;
+    }
+}
+
 .sales__container .sales__container-inner {
     background: white;
     border-bottom: 5px solid #e62b4a;
