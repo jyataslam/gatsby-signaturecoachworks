@@ -32,6 +32,7 @@ const ContactForm = () => {
                     name="f_name"
                     id="f_name"
                     placeholder="First Name"
+                    required
                   />
                 </div>
                 <div className="col-lg-6 col-sm-6">
@@ -41,6 +42,7 @@ const ContactForm = () => {
                     name="l_name"
                     id="l_name"
                     placeholder="Last Name"
+                    required
                   />
                 </div>
                 <div className="col-lg-6 col-sm-6">
@@ -50,6 +52,7 @@ const ContactForm = () => {
                     name="email"
                     id="email"
                     placeholder="Email Address"
+                    required
                   />
                 </div>
                 <div className="col-lg-6 col-sm-6">
@@ -59,6 +62,7 @@ const ContactForm = () => {
                     name="phone"
                     id="phone"
                     placeholder="Phone Number"
+                    required
                   />
                 </div>
                 <div className="col-lg-12 col-sm-12">
@@ -67,6 +71,7 @@ const ContactForm = () => {
                     name="con_message"
                     id="con_message"
                     placeholder="Write Message"
+                    required
                   ></textarea>
                 </div>
               </div>

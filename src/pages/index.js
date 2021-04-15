@@ -10,6 +10,7 @@ import ContactInfos from "@/components/contact-infos";
 import TestimonialsOneCarousel from "@/components/testimonials-carousel";
 import ServiceTwo from "@/components/service-two";
 import AboutTwo from "@/components/about-two";
+import About from "@/components/about-hero";
 import GoogleMap from "@/components/google-map";
 import HeaderOne from "@/components/header-one";
 import SearchContextProvider from "@/context/search-context";
@@ -25,12 +26,11 @@ const HomeOne = () => {
           <Quote />
           <HeaderOne />
           <SliderTwo />
-          <AboutTwo />
+          <About />
           <ServiceTwo />
           <ContactInfos />
           <TestimonialsOneCarousel />
           <TrustedClient />
-          <CallToActionOne extraClassName="ready_2" buttonClass="red_bg" />
           <ParallaxOne />
           <PortfolioHome />
           {/* <GoogleMap extraClass="contact-page" /> */}

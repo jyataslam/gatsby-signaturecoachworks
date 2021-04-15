@@ -26,7 +26,7 @@ const PortfolioHome = () => {
                 )
               )}
               <Col lg={12} className="text-center">
-                <Link className="common_btn red_bg" to="/inventory">
+                <Link className="common_btn red_bg" to="/sales">
                   <span>All Inventory</span>
                 </Link>
               </Col>

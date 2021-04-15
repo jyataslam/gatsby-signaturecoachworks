@@ -30,7 +30,8 @@ a:hover {
 }
 
 @media only screen and (max-width: 426px) {
-    .quote_section  {
-        display: none;
+    .quote_section h6,
+    .quote_section a {
+        font-size: .8rem;
     }
 }

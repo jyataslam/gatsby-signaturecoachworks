@@ -32,14 +32,12 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     return;
   }
 
-  const inventoryTemplate = require.resolve(
-    "./src/templates/inventory-template.js"
-  );
+  const salesTemplate = require.resolve("./src/templates/sales-template.js");
 
   data.data.allInventoryJson.edges.forEach(edge => {
     createPage({
-      path: `/inventory/${edge.node.slug}/`,
-      component: inventoryTemplate,
+      path: `/sales/${edge.node.slug}/`,
+      component: salesTemplate,
       context: {
         slug: edge.node.slug,
       },

@@ -13,10 +13,10 @@ const InventoryPage = () => {
   return (
     <MenuContextProvider>
       <SearchContextProvider>
-        <Layout PageTitle="Inventory">
+        <Layout PageTitle="Sales">
           <Quote />
           <HeaderOne />
-          <PageBanner title="Inventory" name="Inventory" />
+          <PageBanner title="Sales" name="Sales" />
           <InventoryFull />
           <CallToActionOne extraClassName="ready_2" buttonClass="red_bg" />
           <Footer />

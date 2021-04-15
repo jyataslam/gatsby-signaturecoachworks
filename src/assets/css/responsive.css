@@ -13,14 +13,18 @@
 / 1. Mobile Responsive for iPhones, etc
 --------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 426px) {
-  .header_01 {
-    top: 0;
-  }
-  .fixedHeader {
-    top: 0;
-  }
+  
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .navigator .nav__quote-btn {
+    display: none;
+  }
+  .about__image-container {
+    display: none;
+  }
+  .trustClient {
+    margin-top: -145px;
+  }
   .client_2 {
     padding-bottom: 0 !important;
   }
@@ -169,6 +173,7 @@
   .navigator {
     padding-top: 0;
     padding: 0;
+    display: block;
   }
   .navigator a.search {
     margin-right: 10px;
@@ -612,6 +617,9 @@
 / 2. Tablet
 -----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 990px) {
+  .about__image-container {
+    display: none;
+  }
   .google-map__location-section {
     height: 450px;
     position: static;
@@ -905,6 +913,9 @@
   .testi_con p {
     font-size: 18px;
     line-height: 32px;
+  }
+  .navigator .nav__quote-btn {
+    display: none;
   }
 }
 

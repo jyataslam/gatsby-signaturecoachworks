@@ -188,6 +188,7 @@
 .navigator {
   position: relative;
   padding: 6px 0 37px;
+  padding: 0;
 }
 .navigator a {
   display: inline-block;
@@ -195,6 +196,17 @@
   line-height: 0.8;
   font-size: 25px;
   margin: 0;
+}
+.navigator .nav__quote-btn {
+  font-size: 12px;
+  padding: 24px 33px;
+  background: #e72c4a;
+}
+.nav__quote-btn:after {
+  background: black !important;
+}
+.fixedHeader .nav__quote-btn {
+  color: white !important;
 }
 .fixedHeader .navigator a {
   color: black;
@@ -771,7 +783,7 @@
 .abci_content h2 {
   font-size: 50px;
   letter-spacing: 2px;
-  color: #000000;
+  color: #123154;
   line-height: 63px;
   text-transform: uppercase;
   margin: 0 0 43px;
@@ -779,6 +791,19 @@
 }
 .abci_content p {
   margin-bottom: 55px;
+}
+.about__image-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  padding: 0;
+  border-left: 5px solid #e62b4a;
+}
+.about__image {
+  height: 100%;
+  width: 100%;
 }
 
 /*----------------------------------------------------

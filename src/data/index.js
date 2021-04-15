@@ -46,16 +46,12 @@ export const NavLinks = [
     // ],
   },
   {
-    name: "Inventory",
-    url: "/inventory",
+    name: "Sales",
+    url: "/sales",
   },
   {
     name: "Storage",
     url: "/storage",
-  },
-  {
-    name: "Sales",
-    url: "/sales",
   },
   {
     name: "Contact",
@@ -252,9 +248,10 @@ export const ContactInfosList = [
 ];
 
 export const ContactFormTitle = {
-  subTitle: "Contact Us",
-  title: "Get a free quote \nor send us a message",
-  description: "Let us know how we can help!",
+  subTitle: "",
+  title: "Contact us",
+  description:
+    "Let us know how we can help and we'll get back to you as soon as possible.",
 };
 
 import blogImage1 from "@/images/blog/1.jpg";
@@ -414,37 +411,37 @@ export const PortfolioData = [
     title: "Provost",
     price: "1,450,000",
     image: portfolio01,
-    url: "/inventory/rv-one",
+    url: "/sales/rv-one",
   },
   {
     title: "Provost",
     price: "1,450,000",
     image: portfolio02,
-    url: "/inventory/rv-one",
+    url: "/sales/rv-one",
   },
   {
     title: "Provost",
     price: "1,450,000",
     image: portfolio03,
-    url: "/inventory/rv-one",
+    url: "/sales/rv-one",
   },
   {
     title: "Provost",
     price: "1,450,000",
     image: portfolio04,
-    url: "/inventory/rv-one",
+    url: "/sales/rv-one",
   },
   {
     title: "Provost",
     price: "1,450,000",
     image: portfolio05,
-    url: "/inventory/rv-one",
+    url: "/sales/rv-one",
   },
   {
     title: "Provost",
     price: "1,450,000",
     image: portfolio06,
-    url: "/inventory/rv-one",
+    url: "/sales/rv-one",
   },
 ];
 
@@ -932,7 +929,7 @@ import featureTab03 from "@/images/home_1/c3.jpg";
 
 export const FeatureTabData = {
   sectionContent: {
-    title: "why choose us",
+    title: "the gold standard \nfor RV repairs",
     subTitle: "about us",
     text:
       "Someone was in the pod. The tracks go off in this direction. Look, sir -- droids.",
@@ -1037,7 +1034,7 @@ export const PortfolioHomeData = {
   sectionContent: {
     title: "Current Inventory",
     subTitle: "Sales",
-    text: "Inventory placeholder text: What should I put here?",
+    text: "Sales and Inventory placeholder text: What should I put here?",
   },
 };
 

@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "@/components/footer";
 import Layout from "@/components/layout";
 import PageBanner from "@/components/page-banner";
-import AboutOne from "@/components/about-one";
 import CallToActionOne from "@/components/call-to-action-one";
 import Quote from "@/components/quote";
 import TestimonialsOneCarousel from "@/components/testimonials-carousel";
@@ -19,9 +18,8 @@ const AboutPage = () => {
           <Quote />
           <HeaderOne />
           <PageBanner title="About Us" name="About" />
-          <AboutOne />
-          <TestimonialsOneCarousel regularPadding="regular_padding" />
           <FeatureTabOne />
+          <TestimonialsOneCarousel regularPadding="regular_padding" />
           <CallToActionOne extraClassName="ready_2" buttonClass="red_bg" />
           <Footer />
         </Layout>
