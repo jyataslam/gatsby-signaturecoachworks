@@ -21,7 +21,7 @@ const HomeOne = () => {
   return (
     <MenuContextProvider>
       <SearchContextProvider>
-        <Layout PageTitle="Home One">
+        <Layout PageTitle="Premier Coach Repair">
           <Quote />
           <HeaderOne />
           <SliderTwo />
@@ -33,7 +33,7 @@ const HomeOne = () => {
           <CallToActionOne extraClassName="ready_2" buttonClass="red_bg" />
           <ParallaxOne />
           <PortfolioHome />
-          <GoogleMap extraClass="contact-page" />
+          {/* <GoogleMap extraClass="contact-page" /> */}
           <Footer />
         </Layout>
       </SearchContextProvider>

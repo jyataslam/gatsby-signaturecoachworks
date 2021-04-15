@@ -62,6 +62,12 @@ const SliderTwo = () => {
             >
               <span>{button.label}</span>
             </Link>
+            <Link
+              to="/contact"
+              className={`common_btn red_bg slider-two__btn-right`}
+            >
+              <span>GET A QUOTE</span>
+            </Link>
           </Col>
         </Row>
       </Container>

@@ -191,10 +191,13 @@
 }
 .navigator a {
   display: inline-block;
-  color: #000;
+  color: white;
   line-height: 0.8;
   font-size: 25px;
   margin: 0;
+}
+.fixedHeader .navigator a {
+  color: black;
 }
 .navigator a.search {
   margin-right: 16px;
@@ -316,7 +319,21 @@
   background: url(../images/bg/1.jpg) no-repeat center center / cover;
 } */
 .service_section {
-  background: url(../images/bg/black_bg-min.jpeg) no-repeat top center / cover;
+  background: #0f2845;
+  position: relative;
+}
+.service-section__bg-image {
+  background: url(../images/home_1/working-bg-min.jpg) no-repeat top center / cover;
+  opacity: .1 !important;
+  position: absolute !important;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.service-section__bg-image.sec_desc {
+  color: #ededed;
 }
 .storage_section {
   background: white;
@@ -456,6 +473,10 @@
 /*----------------------------------------------------
 / 4. About Agency
 ------------------------------------------------------*/
+.about__header-logo {
+  width: 70%;
+  margin-bottom: 2rem;
+}
 .ab_agency {
   padding-bottom: 147px;
 }
@@ -1192,6 +1213,17 @@
 }
 
 /*----------------------------------------------------
+/ 12. Location Section
+------------------------------------------------------*/
+.client_2 {
+  padding: 0;
+}
+
+.location-section__text {
+  padding: 120px 12vw 120px 3.5vw;
+}
+
+/*----------------------------------------------------
 / 12. Blog Section
 ------------------------------------------------------*/
 .blog {
@@ -1298,10 +1330,11 @@
 } */
 .ready_2 {
   background: url(../images/bg/black_bg-min.jpeg) no-repeat top center / cover;
-  padding: 45px 1.5vw;
+  padding: 60px 1.5vw;
 }
 .ready_2 .sec_title {
   margin: 0;
+  font-size: 2.5rem;
 }
 .ready_2 .common_btn {
   padding: 28px 42.5px;
@@ -1408,8 +1441,6 @@
 /*----------------------------------------------------
 / 15. Servieces 2 Section
 ------------------------------------------------------*/
-.service_section_2 {
-}
 .icon_box_2 {
   position: relative;
   width: 100%;
@@ -1573,9 +1604,9 @@
 /*----------------------------------------------------
 / 17. Tesimonial 02 Section
 ------------------------------------------------------*/
-.testimonial_2 {
+/* .testimonial_2 {
   background: url(../images/bg/7.jpg) no-repeat center center / cover;
-}
+} */
 .regular_padding {
   padding-bottom: 120px !important;
 }
@@ -1661,9 +1692,9 @@
   padding-top: 120px;
 }
 .testi_con p {
-  font-size: 24px;
-  line-height: 42px;
-  letter-spacing: 0.96px;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: 0;
   color: #fff;
   font-weight: 300;
   margin: 0 0 21px;
@@ -3570,6 +3601,10 @@ textarea.input-form:focus {
 
 /* main slider in react js */
 /* alternative of revolution jquery */
+
+.header__logo-mobile {
+  display: none;
+}
 
 .hero {
   height: 100vh;

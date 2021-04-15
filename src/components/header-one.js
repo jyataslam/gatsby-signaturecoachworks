@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { SearchContext } from "@/context/search-context";
 import { MenuContext } from "@/context/menu-context";
 import { Link } from "gatsby";
+import LogoWhiteMobile from "@/images/logo/logo-white-mobile.webp";
 
 const HeaderOne = () => {
   const [sticky, setSticky] = useState(false);
@@ -45,7 +46,7 @@ const HeaderOne = () => {
           <Col className="col-6" lg={2} md={3} sm={3}>
             <div className="logo">
               <Link to="/">
-                <img src={LogoImage.light} alt="" />
+                <img src={LogoImage.light} alt="signature coachworks logo" />
               </Link>
             </div>
           </Col>

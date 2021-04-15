@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import BackgroundImage from "gatsby-background-image";
 import SwiperCore, { Autoplay, Thumbs, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { TestimonialsOneData } from "@/data";
@@ -34,12 +36,34 @@ const TestimonialsOneCarousel = ({ regularPadding }) => {
     },
   };
   const { sectionContent, posts } = TestimonialsOneData;
+
+  const data = useStaticQuery(
+    graphql`
+      query {
+        serviceBg: file(relativePath: { eq: "working-bg-min.jpg" }) {
+          id
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 4160) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `
+  );
+  const serviceBgImage = data.serviceBg.childImageSharp.fluid;
+
   return (
-    <section className={`commonSection testimonial_2 ${regularPadding}`}>
+    <section
+      className={`commonSection testimonial_2 service_section ${regularPadding}`}
+    >
+      <BackgroundImage
+        fluid={serviceBgImage}
+        className="service-section__bg-image"
+      />
       <Container>
         <Row className="testimoniTab">
           <Col lg={5}>
-            <h4 className="sub_title color_aaa">{sectionContent.subTitle}</h4>
             <h2 className="sec_title white">{sectionContent.subTitle}</h2>
             <Swiper
               id="testimonial_2_thumb"

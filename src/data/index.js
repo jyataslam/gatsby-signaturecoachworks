@@ -132,10 +132,10 @@ import sliderTwo03 from "@/images/slider/2_3.jpg";
 export const SliderTwoData = [
   {
     image: sliderTwo01,
-    subTitle: "Collision repair, body work, and professional RV renovations -",
+    subTitle: "Interior upgrades, body work, and professional RV renovations -",
     subTitleTwo: "all in one convenient location.",
-    title: "Full Service RV & Auto",
-    titleTwo: "Body Repair Shop",
+    title: "Full Service Coach & RV",
+    titleTwo: "Custom Repair Shop",
     button: {
       label: "our services",
       url: "/service",
@@ -895,7 +895,7 @@ import testimonial03 from "@/images/logo/google_logo.webp";
 
 export const TestimonialsOneData = {
   sectionContent: {
-    subTitle: "Featured Testimonials",
+    subTitle: "Customer Reviews",
     title: "happy customers",
   },
   posts: [

@@ -10,7 +10,7 @@
 
 */
 /*------------------------------------------------------------------------------------
-/ 1. Mobile Responsive. Responsive For Extra Small Device like: Mobile, Iphone etc
+/ 1. Mobile Responsive for iPhones, etc
 --------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 426px) {
   .header_01 {
@@ -21,6 +21,28 @@
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .client_2 {
+    padding-bottom: 0 !important;
+  }
+  .order-2-mobile {
+    order: 2;
+  }
+  .google-map__location-section {
+    height: 450px;
+    position: static;
+  }
+  .location-section__text {
+    padding: 0 3.5vw;
+  }
+  .hero {
+    height: 67vh;
+  }
+  .commonSection {
+    padding: 60px 0;
+  }
+  .sec_desc, .sec_title, .sub_title {
+    text-align: left;
+  }
   .ready_2 .sec_title {
     font-size: 22px;
     text-align: center;
@@ -29,13 +51,17 @@
   .footer_1 .copyright a {
     line-height: 1.2;
   }
+  .testimonial_2 {
+    padding-bottom: 150px !important;
+  }
   .testi_con p {
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0;
   }
   p {
-    font-size: 1.2rem;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.6;
   }
   /* .hero:before {
     background-position-x: left !important;
@@ -221,9 +247,9 @@
     left: auto !important;
   }
   .sec_title {
-    font-size: 34px;
-    letter-spacing: 1px;
-    line-height: 39px;
+    line-height: 48px;
+    font-size: 43px;
+    letter-spacing: 0;
   }
   .sec_title br {
     display: none;
@@ -330,10 +356,36 @@
   .lbi_details h2 {
     font-size: 22px;
   }
+  .slider-two__col {
+    position: initial;
+  }
+  .slider-two__btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+  }
+  .slider-two__btn-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+  }
   .ready_2 .common_btn,
   .ready .common_btn {
     float: left;
     margin-top: 30px;
+    padding: 10px 20px;
+    line-height: 2.5;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .common_btn {
+    padding: 10px 30px !important;
+    line-height: 2.6;
+    font-size: 14px;
+    font-weight: bold;
+    height: initial;
   }
   .footer_1 .aboutwidget {
     padding-right: 0;
@@ -381,7 +433,7 @@
     line-height: 22px;
   }
   .testi_con {
-    padding-top: 100px;
+    padding-top: 45px;
   }
   .chooseUs_title li {
     width: 100%;
@@ -530,6 +582,12 @@
   .main-slider .swiper-slide-active .image-layer {
     background-position: left;
   }
+  .header__logo {
+    display: none;
+  }
+  .header__logo-mobile {
+    display: block;
+  }
 }
 
 /*------------------------------------------------------------------------------------
@@ -551,15 +609,32 @@
 }
 
 /*----------------------------------------------
-/ 2. Responsive For Small Device.  like: Tab
+/ 2. Tablet
 -----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 990px) {
+  .google-map__location-section {
+    height: 450px;
+    position: static;
+  }
+  .location-section__text {
+    padding: 120px 3.5vw 0;
+    text-align: center !important;
+  }
+  .order-2-mobile {
+    order: 2;
+  }
   .ready_2 .sec_title {
     font-size: 30px;
     line-height: 65px;
   }
   .hero {
     background-position: left;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__logo-mobile {
+    display: block;
   }
   /* .hero:before {
     background-position-x: left !important;
@@ -834,7 +909,7 @@
 }
 
 /*-------------------------------------------------------------------------
-/ 3. Responsive For Medium Device. like: Desktop with 1024px resolution
+/ 3. Responsive For Medium Devices
 ----------------------------------------------------------------------------*/
 @media (min-width: 991px) and (max-width: 1199px) {
   .rev_slider .tp-leftarrow.me_arrows,
@@ -875,6 +950,9 @@
   .abci_content h2,
   .sec_title {
     font-size: 44px;
+  }
+  .sec_title {
+    line-height: 52px;
   }
   .subscribefrom input[type="email"] {
     width: 390px;
@@ -993,7 +1071,7 @@
   }
 }
 /*---------------------------------------------------------------------------------------------------------
-/ 4. Responsive For large Device. like: laptop and other large screen those have minimum 1200px resolution
+/ 4. Responsive For large Devices. like: laptops and other large screens that have a minimum 1200px resolution
 -----------------------------------------------------------------------------------------------------------*/
 @media (min-width: 1200px) and (max-width: 1600px) {
   .rev_slider .tp-caption.layer_1 {
