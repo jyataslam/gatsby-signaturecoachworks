@@ -37,7 +37,10 @@ const AboutTwo = () => {
             /> */}
             <h2 className="sec_title MB_45">{sectionContent.title}</h2>
             <p className="sec_desc">{sectionContent.text}</p>
-            <Link className="common_btn red_bg" to={button.url}>
+            <Link
+              className="common_btn red_bg blue_bg on_white_bg"
+              to={button.url}
+            >
               <span>{button.label}</span>
             </Link>
           </Col>

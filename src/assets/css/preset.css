@@ -69,8 +69,11 @@ ul li{
     margin: 0;
     padding: 0;
     list-style: none;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
-
 /*------------------------------------------------------------------------------
 / 3. Section Title Settings
 ------------------------------------------------------------------------------*/
@@ -90,7 +93,7 @@ ul li{
 .common_btn{
     border: none;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: bold;
     background: #000000;
     color: #fff;
     /* height: 70px; */
@@ -146,6 +149,22 @@ ul li{
 .common_btn.red_bg:hover{
     color: #fff;
 }
+.common_btn.blue_bg {
+    background: transparent;
+    border: 2px solid rgba(211, 211, 211, 0.6);
+    color: white;
+    border-right: none;
+}
+.common_btn.blue_bg:after {
+    background: #0266a5;
+}
+.common_btn.blue_bg:hover {
+    border: 2px solid #0266a5;
+    border-right: none;
+}
+.common_btn.on_white_bg {
+    color: #0266a5;
+}
 
 /*------------------------------------------------------------------------------
 / 5. Section Settings
@@ -198,6 +217,15 @@ ul li{
 .white{
     color: #ffffff;
 }
+.blue {
+    color: #123154;
+}
+.btn__black-font {
+    color: #000;
+}
+.common_btn:hover .btn__black-font {
+    color: white;
+}
 .sec_desc{
     margin: 0 0 54px;
     white-space: pre-line;
@@ -211,6 +239,14 @@ ul li{
 }
 .color_ededed {
     color: #ededed;
+}
+.opaque__bg-image {
+    height: 100%;
+    width: 100%;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    opacity: .7 !important;
 }
 
 

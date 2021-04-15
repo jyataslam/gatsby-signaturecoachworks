@@ -5,6 +5,7 @@ import "../assets/css/trusted-client.css";
 
 const TrustedClient = ({ extraClassName }) => {
   const { image, title, text, url } = TrustClientData;
+
   return (
     <section className={`commonSection trustClient ${extraClassName}`}>
       <div className="container">

@@ -771,7 +771,7 @@
 }
 .abc_inner {
   position: relative;
-  margin-top: -477px;
+  margin-top: -475px;
   z-index: 2;
 }
 .abci_content {
@@ -1194,11 +1194,23 @@
   margin: 0;
 }
 
+.sales_two_section {
+  background: #0f2845;
+  position: relative;
+}
+.sales_two_section .opaque__bg-image {
+  opacity: .1 !important;
+}
+.sales_two_section .sec_title {
+  color: white;
+}
+
 /*----------------------------------------------------
 / 11. Testimonail Section
 ------------------------------------------------------*/
 .testimonial {
-  background: url(../images/bg/3.jpg) no-repeat fixed center / cover;
+  /* background: url(../images/bg/3.jpg) no-repeat fixed center / cover; */
+  background: url(../images/bg/stormtrooper-exterior-min.jpg) no-repeat fixed center / cover;
   padding-bottom: 113px;
 }
 .testimonial_content {
@@ -1354,18 +1366,20 @@
   background: url(../images/bg/6.jpg) no-repeat center center / cover;
 } */
 .ready_2 {
-  background: url(../images/bg/black_bg-min.jpeg) no-repeat top center / cover;
+  /* background: url(../images/bg/black_bg-min.jpeg) no-repeat top center / cover; */
+  background: white;
   padding: 60px 1.5vw;
+  border-top: 2px solid lightgrey;
 }
 .ready_2 .sec_title {
   margin: 0;
   font-size: 2.5rem;
 }
-.ready_2 .common_btn {
+/* .ready_2 .common_btn {
   padding: 28px 42.5px;
   background: #fff;
   color: #000;
-}
+} */
 .calltoaction_flexcol {
   display: flex;
   justify-content: center;
@@ -1798,7 +1812,7 @@
 }
 .chooseUs_title li:hover a,
 .chooseUs_title li.active a {
-  background: #000;
+  background: #0266a5;
   color: #fff;
 }
 .chose_img {
@@ -3634,7 +3648,6 @@ textarea.input-form:focus {
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url(../images/bg/white_bg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

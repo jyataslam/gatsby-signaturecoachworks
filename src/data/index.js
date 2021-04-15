@@ -28,10 +28,6 @@ export const NavLinks = [
     // ],
   },
   {
-    name: "About",
-    url: "/about",
-  },
-  {
     name: "Services",
     url: "/service",
     // subItems: [
@@ -52,6 +48,10 @@ export const NavLinks = [
   {
     name: "Storage",
     url: "/storage",
+  },
+  {
+    name: "About",
+    url: "/about",
   },
   {
     name: "Contact",
@@ -408,37 +408,37 @@ import portfolio06 from "@/images/portfolio/6.jpg";
 
 export const PortfolioData = [
   {
-    title: "Provost",
+    title: "Prevost Coach",
     price: "1,450,000",
     image: portfolio01,
     url: "/sales/rv-one",
   },
   {
-    title: "Provost",
+    title: "Prevost Coach",
     price: "1,450,000",
     image: portfolio02,
     url: "/sales/rv-one",
   },
   {
-    title: "Provost",
+    title: "Prevost Coach",
     price: "1,450,000",
     image: portfolio03,
     url: "/sales/rv-one",
   },
   {
-    title: "Provost",
+    title: "Prevost Coach",
     price: "1,450,000",
     image: portfolio04,
     url: "/sales/rv-one",
   },
   {
-    title: "Provost",
+    title: "Prevost Coach",
     price: "1,450,000",
     image: portfolio05,
     url: "/sales/rv-one",
   },
   {
-    title: "Provost",
+    title: "Prevost Coach",
     price: "1,450,000",
     image: portfolio06,
     url: "/sales/rv-one",
@@ -1034,7 +1034,8 @@ export const PortfolioHomeData = {
   sectionContent: {
     title: "Current Inventory",
     subTitle: "Sales",
-    text: "Sales and Inventory placeholder text: What should I put here?",
+    text:
+      "Signature Coachworks offers consignment sales.\nAll sales coaches come with a full inspection of the coach from our facility. Upgrades and remodels are easily completed onsite.",
   },
 };
 

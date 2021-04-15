@@ -9,7 +9,7 @@ const ContactInfos = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        shopImage: file(relativePath: { eq: "shop-inside-min.jpg" }) {
+        fadeBgImg: file(relativePath: { eq: "fade-bg-white-min.jpg" }) {
           id
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {
@@ -21,10 +21,11 @@ const ContactInfos = () => {
     `
   );
 
-  const shopImage = data.shopImage.childImageSharp.fluid;
+  const fadeBgImg = data.fadeBgImg.childImageSharp.fluid;
   const { subTitle, title, description } = ContactInfosBlock;
   return (
     <section className="commonSection client_2">
+      <BackgroundImage fluid={fadeBgImg} className="opaque__bg-image" />
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-6 col-sm-12 order-2-mobile">
@@ -34,11 +35,6 @@ const ContactInfos = () => {
             <h4 className="sub_title">{subTitle}</h4>
             <h2 className="sec_title">{title}</h2>
             <p className="sec_desc">{description}</p>
-            {/* <BackgroundImage
-              fluid={shopImage}
-              backgroundColor={`#040e18`}
-              className="location__image"
-            /> */}
           </div>
         </div>
       </div>

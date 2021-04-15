@@ -3,12 +3,32 @@ import { Col, Container, Row } from "react-bootstrap";
 import SectionTitle from "./section-title";
 import PortfolioCard from "@/components/portfolio-card";
 import { PortfolioHomeData, PortfolioData } from "@/data";
-import { Link } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const InventoryFull = () => {
   const { sectionContent } = PortfolioHomeData;
+  const data = useStaticQuery(
+    graphql`
+      query {
+        fadeBgImg: file(relativePath: { eq: "stormtrooper-bw-min.jpg" }) {
+          id
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
+      }
+    `
+  );
+  const fadeBgImg = getImage(data.fadeBgImg);
+
   return (
     <section className="commonSection porfolio">
+      <GatsbyImage
+        image={fadeBgImg}
+        alt="background image"
+        className="opaque__bg-image"
+      />
       <Container>
         <Row>
           <Col lg={12} className="text-center">

@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Quote from "@/components/quote";
 import Footer from "@/components/footer";
 import Layout from "@/components/layout";
 import PageBanner from "@/components/page-banner";
@@ -24,6 +25,7 @@ export const query = graphql`
 `;
 
 const InventoryTemplate = ({ data }) => {
+  console.log(data);
   const { inventoryJson } = data;
   const image = getImage(data.inventoryJson.image);
   console.log("inventory image", image);
@@ -31,10 +33,10 @@ const InventoryTemplate = ({ data }) => {
     <MenuContextProvider>
       <SearchContextProvider>
         <Layout PageTitle={inventoryJson.title}>
+          <Quote />
           <HeaderOne />
-          <PageBanner title={inventoryJson.title} name="Inventory" />
+          <PageBanner title={inventoryJson.title} name="Sales" />
           <GatsbyImage image={image} alt={inventoryJson.title} />
-          <ProtfolioDetails details={inventoryJson} />
           <Footer />
         </Layout>
       </SearchContextProvider>
