@@ -3,6 +3,9 @@ module.exports = {
     title: `Signature Coachworks`,
     description: `Signature Coachworks was formed in 2009 by a group of experienced technicians from all facets of the RV and Motorcoach world. Signature Coachworks has become a household name among many high end conversion coach owners.`,
     author: `@signaturecoachworks`,
+    keywords: `rv repair shop, coach repair, rv repair shop near me, coach repair near me, rv mechanic, rv mechanic near me, coach repair near me, coach repair beaumont, beaumont repair shop, repair shop`,
+    siteUrl: `https://signaturecoachworks.netlify.app`,
+    image: `src/images/logo/logo-blue-min.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
