@@ -4,7 +4,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import { SearchContext } from "@/context/search-context";
 import { MenuContext } from "@/context/menu-context";
 import { Link } from "gatsby";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const HeaderOne = () => {
   const [sticky, setSticky] = useState(false);
@@ -45,9 +44,9 @@ const HeaderOne = () => {
         <Row className="justify-content-between align-items-center">
           <Col className="col-6" lg={2} md={3} sm={3}>
             <div className="logo">
-              <AniLink paintDrip duration={1} hex="#0066a5" to="/">
+              <Link to="/">
                 <img src={LogoImage.light} alt="signature coachworks logo" />
-              </AniLink>
+              </Link>
             </div>
           </Col>
           <Col lg={8} sm={8} md={7} className="d-none d-lg-block ">
@@ -81,15 +80,9 @@ const HeaderOne = () => {
           </Col>
           <Col lg={2} md={2} sm={4} className="col-6">
             <div className="navigator text-right">
-              <AniLink
-                className="common_btn red_bg nav__quote-btn"
-                paintDrip
-                duration={1}
-                hex="#e72c4a"
-                to="/contact"
-              >
+              <Link className="common_btn red_bg nav__quote-btn" to="/contact">
                 <span>Get a quote</span>
-              </AniLink>
+              </Link>
               <a
                 href="#"
                 className="menu mobilemenu d-none d-md-none d-lg-none"
