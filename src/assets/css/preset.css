@@ -230,6 +230,13 @@ ul li{
     margin: 0 0 54px;
     white-space: pre-line;
 }
+.single-page__half-header {
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 
 .color_aaa{
     color: #aaaaaa;

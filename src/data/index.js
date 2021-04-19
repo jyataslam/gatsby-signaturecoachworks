@@ -128,10 +128,10 @@ import sliderTwo03 from "@/images/slider/2_3.jpg";
 export const SliderTwoData = [
   {
     image: sliderTwo01,
-    subTitle: "Interior upgrades, body work, and professional RV renovations -",
+    subTitle: "Coach sales, body work, and professional RV renovations -",
     subTitleTwo: "all in one convenient location.",
-    title: "Full Service Coach & RV",
-    titleTwo: "Custom Repair Shop",
+    title: "Premier Coach & RV",
+    titleTwo: "Sales and Repair Shop",
     button: {
       label: "our services",
       url: "/service",
@@ -251,7 +251,7 @@ export const ContactFormTitle = {
   subTitle: "",
   title: "Contact us",
   description:
-    "Let us know how we can help and we'll get back to you as soon as possible.",
+    "Interested in one of our coaches or need a quote?\nLet us know how we can help and we'll get back to you as soon as possible.",
 };
 
 import blogImage1 from "@/images/blog/1.jpg";
@@ -405,44 +405,45 @@ import portfolio03 from "@/images/portfolio/3.jpg";
 import portfolio04 from "@/images/portfolio/4.jpg";
 import portfolio05 from "@/images/portfolio/5.jpg";
 import portfolio06 from "@/images/portfolio/6.jpg";
+import prevostMarathonXl from "@/images/prevost-marathon-xl-1999/prevost-marathon-xl--featured.jpg";
 
 export const PortfolioData = [
   {
-    title: "Prevost Coach",
-    price: "1,450,000",
-    image: portfolio01,
-    url: "/sales/rv-one",
+    title: "1999 Prevost Marathon XL Single Slide",
+    price: "200,000",
+    image: prevostMarathonXl,
+    url: "/sales/1999-prevost-marathon-xl",
   },
-  {
-    title: "Prevost Coach",
-    price: "1,450,000",
-    image: portfolio02,
-    url: "/sales/rv-one",
-  },
-  {
-    title: "Prevost Coach",
-    price: "1,450,000",
-    image: portfolio03,
-    url: "/sales/rv-one",
-  },
-  {
-    title: "Prevost Coach",
-    price: "1,450,000",
-    image: portfolio04,
-    url: "/sales/rv-one",
-  },
-  {
-    title: "Prevost Coach",
-    price: "1,450,000",
-    image: portfolio05,
-    url: "/sales/rv-one",
-  },
-  {
-    title: "Prevost Coach",
-    price: "1,450,000",
-    image: portfolio06,
-    url: "/sales/rv-one",
-  },
+  // {
+  //   title: "Prevost Coach",
+  //   price: "1,450,000",
+  //   image: portfolio02,
+  //   url: "/sales/rv-one",
+  // },
+  // {
+  //   title: "Prevost Coach",
+  //   price: "1,450,000",
+  //   image: portfolio03,
+  //   url: "/sales/rv-one",
+  // },
+  // {
+  //   title: "Prevost Coach",
+  //   price: "1,450,000",
+  //   image: portfolio04,
+  //   url: "/sales/rv-one",
+  // },
+  // {
+  //   title: "Prevost Coach",
+  //   price: "1,450,000",
+  //   image: portfolio05,
+  //   url: "/sales/rv-one",
+  // },
+  // {
+  //   title: "Prevost Coach",
+  //   price: "1,450,000",
+  //   image: portfolio06,
+  //   url: "/sales/rv-one",
+  // },
 ];
 
 export const PortfolioFilters = [

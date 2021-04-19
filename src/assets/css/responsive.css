@@ -41,6 +41,12 @@
   .hero {
     height: 67vh;
   }
+  .hero:before {
+    background-position: left !important;
+  }
+  .hero:after {
+    background-position: left !important;
+  }
   .commonSection {
     padding: 60px 0;
   }

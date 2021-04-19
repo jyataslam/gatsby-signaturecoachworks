@@ -37,10 +37,24 @@ const InventoryFull = () => {
         </Row>
         <Row id="Grid">
           <div className="custom">
-            <Row>
+            <Row
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               {PortfolioData.map((post, index) => (
-                <Col lg={4} md={6} sm={12} key={index}>
+                <Col
+                  lg={4}
+                  md={6}
+                  sm={12}
+                  key={index}
+                  style={{ paddingBottom: "3rem" }}
+                >
                   <PortfolioCard data={post} />
+                  <Link to={post.url}>
+                    <h6 className="sales__single">{post.title}</h6>
+                  </Link>
                 </Col>
               ))}
             </Row>

@@ -1,16 +1,9 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image, url }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +12,9 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            keywords
+            siteUrl
+            image
           }
         }
       }
@@ -26,7 +22,13 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const defaultTitle = site.siteMetadata?.title;
+  const defaultTitle = title || site.siteMetadata.title;
+  const keywords = site.siteMetadata.keywords;
+  const defaultUrl = url || site.siteMetadata.siteUrl;
+  const defaultImage = image || site.siteMetadata.image;
+  console.log("site", site);
+
+  const fixedTitle = "Signature Coachworks";
 
   return (
     <Helmet
@@ -34,19 +36,31 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `%s | ${fixedTitle}` : null}
       meta={[
         {
           name: `description`,
           content: metaDescription,
         },
         {
+          name: "keywords",
+          content: keywords,
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: defaultTitle,
+        },
+        {
+          property: `og:image`,
+          content: defaultImage,
         },
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:url`,
+          content: defaultUrl,
         },
         {
           property: `og:type`,
@@ -62,11 +76,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: defaultTitle,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: defaultImage,
         },
       ].concat(meta)}
     />
@@ -76,7 +94,8 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  title: `Premier Coach Repair & Sales | Signature Coachworks`,
+  description: `Premier coach and RV repair shop and sales serving residents of Beaumont and Southern California.`,
 };
 
 SEO.propTypes = {

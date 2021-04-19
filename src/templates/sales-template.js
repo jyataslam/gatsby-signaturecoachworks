@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import SEO from "@/components/seo";
 import Quote from "@/components/quote";
 import Footer from "@/components/footer";
 import Layout from "@/components/layout";
@@ -14,10 +14,26 @@ export const query = graphql`
   query($slug: String!) {
     inventoryJson(slug: { eq: $slug }) {
       title
+      description
       price
-      image {
+      miles
+      number
+      commonDetails
+      listDetails
+      images {
         childImageSharp {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          fluid(quality: 90, maxWidth: 4160) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      featuredImage {
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          fluid(quality: 90, maxWidth: 4160) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
     }
@@ -25,18 +41,26 @@ export const query = graphql`
 `;
 
 const InventoryTemplate = ({ data }) => {
-  console.log(data);
   const { inventoryJson } = data;
-  const image = getImage(data.inventoryJson.image);
-  console.log("inventory image", image);
+  const headerImg = inventoryJson.featuredImage.childImageSharp.fluid;
+  const seoImg = inventoryJson.featuredImage.childImageSharp.fluid.src;
   return (
     <MenuContextProvider>
       <SearchContextProvider>
         <Layout PageTitle={inventoryJson.title}>
+          <SEO
+            title={data.inventoryJson.title}
+            description={data.inventoryJson.description}
+            image={seoImg}
+          />
           <Quote />
           <HeaderOne />
-          <PageBanner title={inventoryJson.title} name="Sales" />
-          <GatsbyImage image={image} alt={inventoryJson.title} />
+          <PageBanner
+            title={inventoryJson.title}
+            name="Sales"
+            image={headerImg}
+          />
+          <ProtfolioDetails data={inventoryJson} />
           <Footer />
         </Layout>
       </SearchContextProvider>

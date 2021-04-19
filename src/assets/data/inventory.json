@@ -3,12 +3,77 @@
     "slug": "rv-one",
     "title": "RV One Title",
     "price": "250,000",
-    "image": "./images/rv-one/inventory-placeholder.webp"
+    "featuredImage": "./images/rv-one/inventory-placeholder.webp"
   },
   {
     "slug": "rv-two",
     "title": "RV Two Title",
     "price": "650,999",
-    "image": "./images/rv-one/inventory-placeholder.webp"
+    "featuredImage": "./images/rv-one/inventory-placeholder.webp"
+  },
+  {
+    "slug": "1999-prevost-marathon-xl",
+    "title": "1999 Prevost Marathon XL Single Slide",
+    "description": "Beautiful 1999 Prevost Marathon XL Single Slide coach for sale.",
+    "price": "200,000",
+    "miles": "227,905",
+    "number": "Marathon Coach #0528",
+    "featuredImage": "./images/1999-prevost-marathon-xl/featured.jpg",
+    "images": [
+      "./images/1999-prevost-marathon-xl/1-min.jpg",
+      "./images/1999-prevost-marathon-xl/2-min.jpg",
+      "./images/1999-prevost-marathon-xl/3-min.jpg",
+      "./images/1999-prevost-marathon-xl/4-min.jpg",
+      "./images/1999-prevost-marathon-xl/5-min.jpg",
+      "./images/1999-prevost-marathon-xl/6-min.jpg",
+      "./images/1999-prevost-marathon-xl/7-min.jpg",
+      "./images/1999-prevost-marathon-xl/8-min.jpg",
+      "./images/1999-prevost-marathon-xl/9-min.jpg",
+      "./images/1999-prevost-marathon-xl/10-min.jpg",
+      "./images/1999-prevost-marathon-xl/11-min.jpg",
+      "./images/1999-prevost-marathon-xl/12-min.jpg",
+      "./images/1999-prevost-marathon-xl/13-min.jpg",
+      "./images/1999-prevost-marathon-xl/14-min.jpg",
+      "./images/1999-prevost-marathon-xl/15-min.jpg",
+      "./images/1999-prevost-marathon-xl/16-min.jpg",
+      "./images/1999-prevost-marathon-xl/17-min.jpg"
+    ],
+    "commonDetails": [
+      "This Coach Was Used For 9 Years On The Set Of Two And A Half Men As A Dressing Room For Charlie Sheen!",
+
+      "60 Series Detroit Engine.",
+
+      "6 Speed Allison Transmission.",
+
+      "One Of A Kind Custom Order.",
+
+      "Everything In The Coach Was Custom Designed! Charlie Has Decided To Part Ways With The Coach. There Is Still Many Years And Miles Left To Go On This Beautiful Coach, Now It’s Time For Someone New To Take It And Create Lots Of Beautiful Memories! The Coach Has Been Updated And Serviced To Make It A Turnkey Coach For Someone New To Enjoy!"
+    ],
+    "listDetails": [
+      "(2) Beautiful Bright Red Couches In The Salon Newly Reupholstered",
+      "New Day Bed/Couch In Bedroom Newly Reupholstered",
+      "New Samsung Refrigerator",
+      "(2) New 10 Gallon Water Heaters",
+      "New Slide Out Seal",
+      "New Slide Out Locking Mechanisms",
+      "New Exhaust Tip",
+      "New Trace Inverter",
+      "Generator Recently Serviced",
+      "Engine Recently Serviced",
+      "(8) New Bay Door Struts",
+      "(6) New Lifeline House Batteries",
+      "(4) New Chassis Batteries",
+      "New Generator Battery",
+      "New Front Chassis Air Bags",
+      "(8) New Michelin Tires",
+      "New Hd Satellite System",
+      "New Samsung Hd 3d Salon Tv",
+      "New Surround Sound System In Salon",
+      "New Speakers",
+      "New Toilets – (1) Bidet Toilet",
+      "New Carpet In Bedroom",
+      "(2) New Coleman 2 Ton Air Conditioning Units",
+      "Pull Out Electric Grill"
+    ]
   }
 ]

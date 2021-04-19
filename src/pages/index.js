@@ -14,17 +14,17 @@ import SearchContextProvider from "@/context/search-context";
 import MenuContextProvider from "@/context/menu-context";
 import SliderTwo from "@/components/slider-two";
 import SEO from "@/components/seo";
-import image from "@/images/logo/logo-blue-min.png";
+import seoImg from "../images/logo-card.jpg";
 
 const HomeOne = () => {
   return (
     <MenuContextProvider>
       <SearchContextProvider>
-        <Layout PageTitle="Premier Coach Repair">
+        <Layout PageTitle="Signature Coachworks">
           <SEO
-            title="Premier Coach Repair"
-            description="Signature Coachworks was formed in 2009 by a group of experienced technicians from all facets of the RV and Motorcoach world. Signature Coachworks has become a household name among many high end conversion coach owners."
-            metaImage={image}
+            title="Premier Coach Repair and Sales"
+            description="Premier coach and RV sales and full service repair shop in Beaumont, CA."
+            image={seoImg}
           />
           <Quote />
           <HeaderOne />

@@ -24,7 +24,7 @@ const SliderTwo = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        shopImage: file(relativePath: { eq: "mechanic.jpeg" }) {
+        shopImage: file(relativePath: { eq: "coaches-hero-dark-2-min.jpg" }) {
           id
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {

@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Signature Coachworks`,
-    description: `Signature Coachworks was formed in 2009 by a group of experienced technicians from all facets of the RV and Motorcoach world. Signature Coachworks has become a household name among many high end conversion coach owners.`,
+    description: `Premier coach and RV sales and full service repair shop in Beaumont, CA.`,
     author: `@signaturecoachworks`,
-    keywords: `rv repair shop, coach repair, rv repair shop near me, coach repair near me, rv mechanic, rv mechanic near me, coach repair near me, coach repair beaumont, beaumont repair shop, repair shop`,
+    keywords: `rv repair shop, coach repair, rv repair shop near me, coach repair near me, rv mechanic, rv mechanic near me, coach repair near me, coach repair beaumont, beaumont repair shop, repair shop, coach sales, rv sales, coaches for sale`,
     siteUrl: `https://signaturecoachworks.netlify.app`,
-    image: `src/images/logo/logo-blue-min.png`,
+    image: `src/images/coaches-hero-dark-2-min.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,6 +21,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `1999prevostmarathonxl`,
+        path: `${__dirname}/src/assets/data/images/1999-prevost-marathon-xl`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `data`,
         path: `${__dirname}/src/assets/data`,
       },
@@ -31,13 +38,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Signature Coachworks`,
+        short_name: `signaturecoachworks`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/mechanic.jpeg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,
