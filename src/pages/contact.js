@@ -20,6 +20,7 @@ const ContactPage = () => {
             title="Contact Us"
             description="Get a free quote or contact us regarding sales"
             image={seoImg}
+            url="/contact"
           />
           <Quote />
           <HeaderOne />

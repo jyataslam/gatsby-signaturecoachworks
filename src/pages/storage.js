@@ -20,6 +20,7 @@ const StoragePage = () => {
             title="Storage"
             description="We provide safe and secure indoor and outdoor storage options for our clients. Each storage parking has optional shore power as well."
             image={seoImg}
+            url="/storage"
           />
           <Quote />
           <HeaderOne />

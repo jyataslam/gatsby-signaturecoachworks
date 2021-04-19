@@ -37,6 +37,7 @@ const InventoryPage = () => {
             title="Sales"
             description="Signature Coachworks offers consignment sales on a wide variety of coaches and RV's."
             image={seoImg}
+            url="/sales"
           />
           <Quote />
           <HeaderOne />

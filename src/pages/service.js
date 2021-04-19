@@ -38,6 +38,7 @@ const ServicePage = () => {
             title="Services"
             description="We work on all major and minor brands of coach to ensure your coach gets the quality care it deserves."
             image={seoImg}
+            url="/service"
           />
           <Quote />
           <HeaderOne />

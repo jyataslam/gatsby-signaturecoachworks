@@ -13,6 +13,7 @@ import HeaderOne from "@/components/header-one";
 export const query = graphql`
   query($slug: String!) {
     inventoryJson(slug: { eq: $slug }) {
+      slug
       title
       description
       price
@@ -52,6 +53,7 @@ const InventoryTemplate = ({ data }) => {
             title={data.inventoryJson.title}
             description={data.inventoryJson.description}
             image={seoImg}
+            url={inventoryJson.slug}
           />
           <Quote />
           <HeaderOne />

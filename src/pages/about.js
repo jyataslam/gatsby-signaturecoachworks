@@ -38,6 +38,7 @@ const AboutPage = () => {
             title="About Us"
             description="Coach sales, body work, and professional RV renovations - Signature Coachworks does it all."
             image={seoImg}
+            url="/about"
           />
           <Quote />
           <HeaderOne />
