@@ -1,17 +1,5 @@
 [
   {
-    "slug": "rv-one",
-    "title": "RV One Title",
-    "price": "250,000",
-    "featuredImage": "./images/rv-one/inventory-placeholder.webp"
-  },
-  {
-    "slug": "rv-two",
-    "title": "RV Two Title",
-    "price": "650,999",
-    "featuredImage": "./images/rv-one/inventory-placeholder.webp"
-  },
-  {
     "slug": "1999-prevost-marathon-xl",
     "title": "1999 Prevost Marathon XL Single Slide",
     "description": "Beautiful 1999 Prevost Marathon XL Single Slide coach for sale.",
