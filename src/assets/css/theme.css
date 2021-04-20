@@ -652,12 +652,13 @@
   opacity: 0; */
   position: absolute;
   left: 20px;
-  bottom: 30px;
+  bottom: 15px;
   z-index: 3;
-  transition: all ease 900ms;
+  padding-right: 20px;
+  /* transition: all ease 900ms;
   -moz-transition: all ease 900ms;
   -webkit-transition: all ease 900ms;
-  -o-transition: all ease 900ms;
+  -o-transition: all ease 900ms; */
 }
 .singlefolio:after {
   position: absolute;
@@ -688,8 +689,9 @@
   -moz-transition: all ease 400ms;
 }
 .singlefolio .folioHover h4 {
-  font-size: 20px;
-  line-height: 0.8;
+  font-size: 18px;
+  /* line-height: 0.8; */
+  line-height: 1.2;
   color: #fff;
   letter-spacing: 0.8px;
   margin: 0;
@@ -711,11 +713,11 @@
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
-.singlefolio:hover .folioHover {
+/* .singlefolio:hover .folioHover {
   visibility: visible;
   opacity: 1;
   left: 50px;
-}
+} */
 .singlefolio:hover:after {
   width: 100%;
 }
@@ -775,7 +777,7 @@
 }
 .abc_inner {
   position: relative;
-  margin-top: -475px;
+  margin-top: -488px;
   z-index: 2;
 }
 .abci_content {
@@ -3855,4 +3857,21 @@ textarea.input-form:focus {
 .main-slider__two .main-slider__subtext,
 .main-slider__two .main-slider__title {
   color: #000000;
+}
+
+/* ERROR 404 SECTION */
+.error__page {
+  height: 75vh;
+  width: 100%;
+  padding: 0 3.5vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgrey;
+}
+
+.error__page h1 {
+  padding-bottom: 1rem;
 }

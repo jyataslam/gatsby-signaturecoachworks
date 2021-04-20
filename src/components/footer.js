@@ -14,9 +14,9 @@ const Footer = () => {
                 <img src={footer} alt="signature coachworks logo" />
               </Link>
               <p>
-                Signature Coachworks has become a household name among many high
-                end conversion coach owners. We are known for our attention to
-                detail, craftsmanship and vast knowledge of all coach systems.
+                Premier Coach & RV Sales and Repair Shop located in Beaumont,
+                CA. Coach sales, body work, and professional RV renovations -
+                all in one convenient location.
               </p>
             </aside>
           </div>
@@ -44,18 +44,12 @@ const Footer = () => {
               <h3 className="widget_title">social</h3>
               <ul>
                 <li>
-                  <a href="#">
-                    <i className="fa fa-twitter"></i>Twitter
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
+                  <a
+                    href="https://www.facebook.com/signaturecoachworks/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="fa fa-facebook-square"></i>Facebook
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa fa-instagram"></i>Instagram
                   </a>
                 </li>
               </ul>
@@ -65,8 +59,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-12 col-sm-12 text-center">
             <div className="copyright">
-              © copyright {new Date().getFullYear()}{" "}
-              <a href="#">Signature Coachworks</a>
+              © copyright {new Date().getFullYear()} <a>Signature Coachworks</a>
             </div>
           </div>
         </div>

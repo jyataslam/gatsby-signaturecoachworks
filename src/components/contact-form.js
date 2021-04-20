@@ -1,8 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import { ContactFormTitle } from "@/data";
 
 const ContactForm = () => {
   const { subTitle, title, description } = ContactFormTitle;
+
+  const [formState, setFormState] = useState({
+    f_name: "",
+    l_name: "",
+    email: "",
+    phone: "",
+    con_message: "",
+  });
+
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  };
+
+  const handleChange = e => {
+    setFormState({
+      ...formState,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formState }),
+    })
+      .then(() => console.log("message sent"))
+      .catch(error => console.log("message not sent"));
+    e.preventDefault();
+  };
+
   return (
     <section className="commonSection ContactPage">
       <div className="container">
@@ -17,13 +50,16 @@ const ContactForm = () => {
           <div className="col-lg-8 offset-lg-2 col-sm-12 col-md-10 offset-md-1">
             <form
               action="/success"
-              method="POST"
+              method="post"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
               className="contactFrom"
               id="contactForm"
               name="contact"
-              data-netlify="true"
+              onSubmit={handleSubmit}
             >
-              <input type="hidden" name="contact" value="contact" />
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
               <div className="row">
                 <div className="col-lg-6 col-sm-6">
                   <input
@@ -32,6 +68,8 @@ const ContactForm = () => {
                     name="f_name"
                     id="f_name"
                     placeholder="First Name"
+                    onChange={handleChange}
+                    value={formState.f_name}
                     required
                   />
                 </div>
@@ -42,6 +80,8 @@ const ContactForm = () => {
                     name="l_name"
                     id="l_name"
                     placeholder="Last Name"
+                    onChange={handleChange}
+                    value={formState.l_name}
                     required
                   />
                 </div>
@@ -52,6 +92,8 @@ const ContactForm = () => {
                     name="email"
                     id="email"
                     placeholder="Email Address"
+                    onChange={handleChange}
+                    value={formState.email}
                     required
                   />
                 </div>
@@ -62,6 +104,8 @@ const ContactForm = () => {
                     name="phone"
                     id="phone"
                     placeholder="Phone Number"
+                    onChange={handleChange}
+                    value={formState.phone}
                     required
                   />
                 </div>
@@ -71,6 +115,8 @@ const ContactForm = () => {
                     name="con_message"
                     id="con_message"
                     placeholder="Write Message"
+                    onChange={handleChange}
+                    value={formState.con_message}
                     required
                   ></textarea>
                 </div>

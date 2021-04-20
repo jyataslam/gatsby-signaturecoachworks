@@ -2,16 +2,24 @@ import React from "react";
 import { Link } from "gatsby";
 
 const PortfolioCard = ({ data }) => {
-  const { image, title, price, url } = data;
+  console.log("card data", data);
+  const {
+    slug,
+    title,
+    featuredImage: {
+      childImageSharp: {
+        fluid: { src },
+      },
+    },
+  } = data;
+
   return (
-    <Link to={url}>
+    <Link to={`/sales/${slug}`}>
       <div className={`singlefolio`}>
-        <img src={image} alt={title} />
+        <img src={src} alt={title} />
         <div className="folioHover">
           {/* <p className="cate">${price}</p> */}
-          <h4>
-            <a href={url}>{title}</a>
-          </h4>
+          <h4>{title}</h4>
         </div>
       </div>
     </Link>

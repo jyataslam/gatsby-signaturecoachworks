@@ -103,18 +103,12 @@ const PopupMenu = () => {
               <div className="popUp_social text-center text-md-right">
                 <ul>
                   <li>
-                    <a href="#">
-                      <i className="fa fa-twitter"></i>Twitter
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
+                    <a
+                      href="https://www.facebook.com/signaturecoachworks/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="fa fa-facebook-square"></i>Facebook
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-instagram"></i>Instagram
                     </a>
                   </li>
                 </ul>

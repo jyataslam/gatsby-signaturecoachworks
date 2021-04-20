@@ -26,8 +26,6 @@ function SEO({ description, lang, meta, title, image, url }) {
   const keywords = site.siteMetadata.keywords;
   const defaultUrl = url || site.siteMetadata.siteUrl;
   const defaultImage = image || site.siteMetadata.image;
-  console.log("site", site);
-
   const fixedTitle = "Signature Coachworks";
 
   return (
@@ -36,7 +34,7 @@ function SEO({ description, lang, meta, title, image, url }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${fixedTitle}` : null}
+      titleTemplate={defaultTitle ? `%s - ${fixedTitle}` : null}
       meta={[
         {
           name: `description`,
@@ -48,7 +46,7 @@ function SEO({ description, lang, meta, title, image, url }) {
         },
         {
           property: `og:title`,
-          content: `${defaultTitle} | ${fixedTitle}`,
+          content: `${defaultTitle} - ${fixedTitle}`,
         },
         {
           property: `og:image`,
@@ -76,7 +74,7 @@ function SEO({ description, lang, meta, title, image, url }) {
         },
         {
           name: `twitter:title`,
-          content: `${defaultTitle} | ${fixedTitle}`,
+          content: `${defaultTitle} - ${fixedTitle}`,
         },
         {
           name: `twitter:description`,

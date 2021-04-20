@@ -1067,7 +1067,7 @@ export const AboutTwoData = {
       "Signature Coachworks was formed in 2009 by a group of experienced technicians from all facets of the RV and Motorcoach world. Signature Coachworks has become a household name among many high end conversion coach owners. We are known for our attention to detail, craftsmanship and vast knowledge of all coach systems.",
   },
   button: {
-    label: "Learn More",
+    label: "About Us",
     url: "/about",
   },
   gallery: [aboutTwo01, aboutTwo02],

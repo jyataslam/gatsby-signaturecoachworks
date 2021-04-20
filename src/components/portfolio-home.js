@@ -17,10 +17,26 @@ const PortfolioHome = () => {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
+        allInventory: allInventoryJson {
+          edges {
+            node {
+              featuredImage {
+                childImageSharp {
+                  fluid(quality: 90, maxWidth: 4160) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
+              slug
+              title
+            }
+          }
+        }
       }
     `
   );
   const fadeBgImg = getImage(data.fadeBgImg);
+  const inventoryArray = data.allInventory.edges;
 
   return (
     <section className="commonSection porfolio">
@@ -43,7 +59,7 @@ const PortfolioHome = () => {
                 alignItems: "center",
               }}
             >
-              {PortfolioData.filter((post, index) => index < 3).map(
+              {/* {PortfolioData.filter((post, index) => index < 3).map(
                 (post, index) => (
                   <Col
                     lg={4}
@@ -55,8 +71,22 @@ const PortfolioHome = () => {
                     <PortfolioCard data={post} />
                   </Col>
                 )
-              )}
-              <Col lg={12} className="text-center">
+                )} */}
+              {inventoryArray
+                .filter((coach, index) => index < 3)
+                .map((coach, index) => {
+                  console.log("coach", coach);
+                  return (
+                    <Col lg={4} md={6} sm={12} key={index}>
+                      <PortfolioCard data={coach.node} />
+                    </Col>
+                  );
+                })}
+              <Col
+                lg={12}
+                className="text-center"
+                style={{ marginTop: "2rem" }}
+              >
                 <Link className="common_btn red_bg" to="/sales">
                   <span>All Inventory</span>
                 </Link>

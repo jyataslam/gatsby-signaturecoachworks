@@ -23,6 +23,9 @@
     width: 95%;
     margin: 0 auto 2rem;
   }
+  .singlefolio .folioHover h4 {
+    font-size: 16px;
+  }
   .pageBanner {
     min-height: initial;
     padding-top: 140px;
@@ -635,6 +638,9 @@
 / 2. Tablet
 -----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 990px) {
+  .singlefolio .folioHover h4 {
+    font-size: 16px;
+  }
   .about__image-container {
     display: none;
   }
@@ -941,6 +947,9 @@
 / 3. Responsive For Medium Devices
 ----------------------------------------------------------------------------*/
 @media (min-width: 991px) and (max-width: 1199px) {
+  .singlefolio .folioHover h4 {
+    font-size: 16px;
+  }
   .rev_slider .tp-leftarrow.me_arrows,
   .rev_slider .tp-rightarrow.me_arrows {
     width: 60px;

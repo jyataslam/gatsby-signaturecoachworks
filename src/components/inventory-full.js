@@ -17,10 +17,26 @@ const InventoryFull = () => {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
+        allInventory: allInventoryJson {
+          edges {
+            node {
+              featuredImage {
+                childImageSharp {
+                  fluid(quality: 90, maxWidth: 4160) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
+              slug
+              title
+            }
+          }
+        }
       }
     `
   );
   const fadeBgImg = getImage(data.fadeBgImg);
+  const inventoryArray = data.allInventory.edges;
 
   return (
     <section className="commonSection porfolio">
@@ -43,17 +59,16 @@ const InventoryFull = () => {
                 alignItems: "center",
               }}
             >
-              {PortfolioData.map((post, index) => (
-                <Col
-                  lg={4}
-                  md={6}
-                  sm={12}
-                  key={index}
-                  style={{ paddingBottom: "3rem" }}
-                >
-                  <PortfolioCard data={post} />
-                </Col>
-              ))}
+              {inventoryArray
+                .filter((coach, index) => index < 3)
+                .map((coach, index) => {
+                  console.log("coach", coach);
+                  return (
+                    <Col lg={4} md={6} sm={12} key={index}>
+                      <PortfolioCard data={coach.node} />
+                    </Col>
+                  );
+                })}
             </Row>
           </div>
         </Row>

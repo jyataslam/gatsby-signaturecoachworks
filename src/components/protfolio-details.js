@@ -1,18 +1,9 @@
 import React from "react";
+import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Container, Row, Col } from "react-bootstrap";
-import { PortfolioDetailsData } from "@/data";
+
 const ProtfolioDetails = ({ data }) => {
-  const {
-    gallery,
-    title,
-    text,
-    client,
-    categories,
-    date,
-    socials,
-  } = PortfolioDetailsData;
-  console.log("inv", data);
   const featuredImage = getImage(data.featuredImage);
   return (
     <section className="commonSection porfolioDetail">
@@ -70,6 +61,21 @@ const ProtfolioDetails = ({ data }) => {
                 </a>
               </p>
             </div>
+          </Col>
+          <Col
+            lg={8}
+            md={7}
+            sm={12}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              order: "3",
+            }}
+          >
+            <Link className="common_btn red_bg" to="/sales">
+              <span>Back To Sales</span>
+            </Link>
           </Col>
         </Row>
       </Container>

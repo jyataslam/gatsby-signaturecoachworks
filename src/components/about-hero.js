@@ -3,7 +3,6 @@ import { AboutTwoData } from "@/data";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
-import logo from "@/images/logo/logo-blue-min.png";
 
 const AboutTwo = () => {
   const { sectionContent, button, gallery } = AboutTwoData;
