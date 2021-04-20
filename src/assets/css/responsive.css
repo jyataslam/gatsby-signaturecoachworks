@@ -16,6 +16,18 @@
   
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .single-page__half-header:before {
+    background-position: left !important;
+  }
+  .singlefolio {
+    width: 95%;
+    margin: 0 auto 2rem;
+  }
+  .pageBanner {
+    min-height: initial;
+    padding-top: 140px;
+    padding-bottom: 40px;
+  }
   .navigator .nav__quote-btn {
     display: none;
   }

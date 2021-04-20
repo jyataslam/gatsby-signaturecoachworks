@@ -53,9 +53,6 @@ const PortfolioHome = () => {
                     style={{ paddingBottom: "3rem" }}
                   >
                     <PortfolioCard data={post} />
-                    <Link to={post.url}>
-                      <h6 className="sales__single">{post.title}</h6>
-                    </Link>
                   </Col>
                 )
               )}
