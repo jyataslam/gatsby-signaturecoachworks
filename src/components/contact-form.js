@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { navigate } from "gatsby";
 import { ContactFormTitle } from "@/data";
 
 const ContactForm = () => {
@@ -26,14 +27,14 @@ const ContactForm = () => {
   };
 
   const handleSubmit = e => {
+    e.preventDefault();
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...formState }),
     })
-      .then(() => console.log("message sent"))
-      .catch(error => console.log("message not sent"));
-    e.preventDefault();
+      .then(() => navigate("/success"))
+      .catch(error => console.log("message not sent", error));
   };
 
   return (
