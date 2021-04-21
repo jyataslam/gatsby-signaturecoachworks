@@ -237,6 +237,9 @@ ul li{
     top: 0;
     left: 0;
 }
+.dark__bg {
+    opacity: .5 !important;
+}
 
 .color_aaa{
     color: #aaaaaa;

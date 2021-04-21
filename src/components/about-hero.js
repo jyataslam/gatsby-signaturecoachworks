@@ -5,7 +5,7 @@ import { Link, graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
 const AboutTwo = () => {
-  const { sectionContent, button, gallery } = AboutTwoData;
+  const { sectionContent, button } = AboutTwoData;
   const data = useStaticQuery(
     graphql`
       query {
@@ -28,7 +28,7 @@ const AboutTwo = () => {
       <Container style={{ position: "static" }}>
         <Row>
           <Col lg={6} md={12} sm={12} className="PR_79">
-            {/* <h4 className="sub_title">{sectionContent.subTitle}</h4> */}
+            <h4 className="sub_title">signature coachworks</h4>
             {/* <img
               src={logo}
               alt="signature coachworks logo"

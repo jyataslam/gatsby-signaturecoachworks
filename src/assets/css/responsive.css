@@ -233,6 +233,7 @@
   .footer__contacts li {
     font-size: 13px;
     margin: 0;
+    padding-bottom: 5px;
   }
   .popUp_social {
     text-align: center;
@@ -345,11 +346,16 @@
   .abci_content {
     margin-left: 0;
     padding: 50px 0 0;
+    text-align: center;
   }
   .abci_content h2 {
     font-size: 36px;
     letter-spacing: 1px;
     line-height: 50px;
+  }
+  .abci_content h2,
+  .abci_content p {
+    text-align: left;
   }
   .team_slider .slick-slide {
     margin: 0 10px;

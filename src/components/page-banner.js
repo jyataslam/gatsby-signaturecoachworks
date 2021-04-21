@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
-const PageBanner = ({ title, name, image }) => {
+const PageBanner = ({ title, name, image, bg }) => {
+  console.log(bg);
   return (
     <section className="pageBanner">
       <BackgroundImage
         fluid={image}
         alt="our services image"
-        className="single-page__half-header"
+        className={`single-page__half-header ${bg}`}
       />
       <div className="container">
         <div className="row">

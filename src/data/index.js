@@ -1,6 +1,6 @@
 import logoLight from "@/images/logo/logo-blue-min.png";
-import logoDark from "@/images/logo/logo-white.png";
-import logoFooter from "@/images/logo/signature-logo-blue-min.png";
+import logoDark from "@/images/logo/signature-logo-blue-min.png";
+import logoFooter from "@/images/logo/logo-gradient-outline-white-min.png";
 
 export const LogoImage = {
   light: logoLight,
@@ -30,16 +30,6 @@ export const NavLinks = [
   {
     name: "Services",
     url: "/service",
-    // subItems: [
-    //   {
-    //     name: "Services",
-    //     url: "/service",
-    //   },
-    //   {
-    //     name: "Service Details",
-    //     url: "/service-details",
-    //   },
-    // ],
   },
   {
     name: "Sales",
@@ -129,7 +119,7 @@ export const SliderTwoData = [
   {
     image: sliderTwo01,
     subTitle: "Coach sales, body work, and professional RV renovations -",
-    subTitleTwo: "all in one convenient location.",
+    subTitleTwo: "all in one easy to find location.",
     title: "Premier Coach & RV",
     titleTwo: "Sales and Repair Shop",
     button: {
@@ -672,11 +662,11 @@ export const FunfactData = [
     countNumber: 802,
   },
   {
-    title: "Clients Jerked Off",
+    title: "Number up",
     countNumber: 480,
   },
   {
-    title: "Blowjobs Given",
+    title: "Nick Weeeeeathers",
     countNumber: 626,
   },
   {

@@ -61,6 +61,7 @@ const InventoryTemplate = ({ data }) => {
             title={inventoryJson.title}
             name="Sales"
             image={headerImg}
+            bg="dark__bg"
           />
           <ProtfolioDetails data={inventoryJson} />
           <Footer />
