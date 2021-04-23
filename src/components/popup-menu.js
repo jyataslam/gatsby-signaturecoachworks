@@ -80,6 +80,12 @@ const PopupMenu = () => {
                         </li>
                       );
                     })}
+                    <Link
+                      className="glowing_btn red_bg nav__quote-btn"
+                      to="/contact"
+                    >
+                      <span>Get a quote</span>
+                    </Link>
                   </ul>
                 </nav>
               </div>

@@ -84,7 +84,7 @@ const HeaderOne = () => {
           </Col>
           <Col lg={2} md={2} sm={4} className="col-6">
             <div className="navigator text-right">
-              <Link className="common_btn red_bg nav__quote-btn" to="/contact">
+              <Link className="glowing_btn red_bg nav__quote-btn" to="/contact">
                 <span>Get a quote</span>
               </Link>
               <a

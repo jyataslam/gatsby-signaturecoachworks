@@ -205,6 +205,10 @@
 .nav__quote-btn:after {
   background: black !important;
 }
+.nav__quote-btn:hover {
+  color: lightgrey !important;
+  background: #1e1e1e !important;
+}
 .fixedHeader .nav__quote-btn {
   color: white !important;
 }
