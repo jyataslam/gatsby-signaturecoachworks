@@ -12,9 +12,6 @@
 /*------------------------------------------------------------------------------------
 / 1. Mobile Responsive for iPhones, etc
 --------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 426px) {
-  
-}
 @media (min-width: 320px) and (max-width: 767px) {
   .single-page__half-header:before {
     background-position: left !important;
@@ -220,8 +217,11 @@
   .dl-menu__wrap ul li {
     margin: 22px 0;
   }
+  .dl-menu__wrap ul li:last-child a {
+    color: #e62b4a;
+  }
   .dl-menu__wrap ul li a {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
     border-bottom: 1px solid rgba(10,36,88,.25);
     padding-bottom: 8px;
@@ -229,11 +229,13 @@
     text-transform: capitalize;
   }
   .footer__contacts {
+    width: 100%;
     text-align: center;
-    padding: 0 20px;
-    bottom: 150px;
+    padding: 20px 0 0;
+    /* bottom: 150px; */
     left: 0;
     right: 0;
+    position: static;
   }
   .footer__contacts li {
     font-size: 13px;
@@ -246,11 +248,12 @@
     font-weight: 300;
   }
   .popUp_social {
-    text-align: center;
-    text-align: center;
-    right: 0;
+    width: 100%;
+    /* right: 0;
     left: 0;
-    bottom: 70px;
+    bottom: 70px; */
+    position: static;
+    padding: 35px 0 0;
   }
   .popUp_social ul {
     text-align: left;
@@ -970,6 +973,9 @@
 / 3. Responsive For Medium Devices
 ----------------------------------------------------------------------------*/
 @media (min-width: 991px) and (max-width: 1199px) {
+  .fixedHeader {
+    display: initial;
+  }
   .menu__btn {
     display: none;
   }
@@ -1138,6 +1144,9 @@
 / 4. Responsive For large Devices. like: laptops and other large screens that have a minimum 1200px resolution
 -----------------------------------------------------------------------------------------------------------*/
 @media (min-width: 1200px) and (max-width: 1600px) {
+  .fixedHeader {
+    display: initial;
+  }
   .menu__btn {
     display: none;
   }
@@ -1167,5 +1176,8 @@
 @media only screen and (min-width: 1601px) {
   .menu__btn {
     display: none;
+  }
+  .fixedHeader {
+    display: initial;
   }
 }

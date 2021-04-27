@@ -80,55 +80,56 @@ const PopupMenu = () => {
                         </li>
                       );
                     })}
-                    <Link
+                    {/* <Link
                       className="glowing_btn red_bg nav__quote-btn"
                       to="/contact"
                     >
                       <span>Get a quote</span>
-                    </Link>
+                    </Link> */}
+                    <li>
+                      <Link to="/contact">get a quote</Link>
+                    </li>
                   </ul>
                 </nav>
+                <ul className="footer__contacts">
+                  <li>
+                    <a href="tel:+19518458056">Phone: (951)845-8056</a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@signaturecoachworks.com">
+                      Email: info@signaturecoachworks.com
+                    </a>
+                  </li>
+                  <li>Address: 101 California Ave. Beaumont, CA 92223</li>
+                </ul>
+                <div className="popUp_social text-center text-md-right">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/signaturecoachworks/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fa fa-facebook-square"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.yelp.com/biz/signature-coachworks-beaumont"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fa fa-yelp"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-6 col-sm-12 col-xs-12 text-center text-md-left">
-              <ul className="footer__contacts">
-                <li>
-                  <a href="tel:+19518458056">Phone: (951)845-8056</a>
-                </li>
-                <li>
-                  <a href="mailto:info@signaturecoachworks.com">
-                    Email: info@signaturecoachworks.com
-                  </a>
-                </li>
-                <li>Address: 101 California Ave. Beaumont, CA 92223</li>
-              </ul>
-            </div>
-            <div className="col-lg-6 col-sm-12">
-              <div className="popUp_social text-center text-md-right">
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/signaturecoachworks/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fa fa-facebook-square"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.yelp.com/biz/signature-coachworks-beaumont"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fa fa-yelp"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <div className="col-lg-6 col-sm-12 col-xs-12 text-center text-md-left"></div>
+            <div className="col-lg-6 col-sm-12"></div>
           </div>
         </div>
       </div>

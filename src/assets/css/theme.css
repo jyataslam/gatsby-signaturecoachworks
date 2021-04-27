@@ -256,6 +256,7 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: none;
 }
 .black_color.fixedHeader {
   background: #fff;
@@ -3131,7 +3132,7 @@ textarea.input-form:focus {
   margin-right: 10px;
 }
 .show-overlay-nav .popup.popup__menu.popup__menu img {
-  width: 110px;
+  width: 150px;
   height: auto;
 }
 .popUp_social ul li a:hover {
@@ -3180,7 +3181,8 @@ textarea.input-form:focus {
   transform: translateY(-100%);
   transition: all 0.6s 1000ms cubic-bezier(0.7, 0, 0.3, 1);
   width: 100%;
-  padding-top: 80px;
+  padding-top: 120px;
+  overflow-y: scroll;
 }
 .show-popup .popup-inner,
 .show-overlay-nav .popup-inner {
