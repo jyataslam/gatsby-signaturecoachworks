@@ -218,10 +218,10 @@
     top: 20px;
   }
   .dl-menu__wrap ul li {
-    margin: 30px 0;
+    margin: 22px 0;
   }
   .dl-menu__wrap ul li a {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     border-bottom: 1px solid rgba(10,36,88,.25);
     padding-bottom: 8px;
@@ -231,7 +231,7 @@
   .footer__contacts {
     text-align: center;
     padding: 0 20px;
-    bottom: 120px;
+    bottom: 150px;
     left: 0;
     right: 0;
   }
