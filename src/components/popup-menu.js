@@ -114,7 +114,16 @@ const PopupMenu = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fa fa-facebook-square"></i>Facebook
+                      <i className="fa fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.yelp.com/biz/signature-coachworks-beaumont"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fa fa-yelp"></i>
                     </a>
                   </li>
                 </ul>

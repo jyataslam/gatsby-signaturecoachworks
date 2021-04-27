@@ -218,16 +218,20 @@
     top: 20px;
   }
   .dl-menu__wrap ul li {
-    margin: 20px 0;
+    margin: 30px 0;
   }
   .dl-menu__wrap ul li a {
     font-size: 26px;
     font-weight: bold;
+    border-bottom: 1px solid rgba(10,36,88,.25);
+    padding-bottom: 8px;
+    letter-spacing: 0;
+    text-transform: capitalize;
   }
   .footer__contacts {
     text-align: center;
-    padding: 0 5px;
-    bottom: 55px;
+    padding: 0 20px;
+    bottom: 120px;
     left: 0;
     right: 0;
   }
@@ -235,13 +239,21 @@
     font-size: 13px;
     margin: 0;
     padding-bottom: 5px;
+    text-align: left;
+    font-weight: 300;
+  }
+  .footer__contacts li a {
+    font-weight: 300;
   }
   .popUp_social {
     text-align: center;
     text-align: center;
     right: 0;
     left: 0;
-    bottom: 15px;
+    bottom: 70px;
+  }
+  .popUp_social ul {
+    text-align: left;
   }
   .popUp_social ul li {
     margin-right: 10px;
@@ -645,6 +657,10 @@
 / 2. Tablet
 -----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 990px) {
+  .popup-inner {
+    justify-content: center;
+    padding-top: 0;
+  }
   .singlefolio .folioHover h4 {
     font-size: 16px;
   }
@@ -954,6 +970,9 @@
 / 3. Responsive For Medium Devices
 ----------------------------------------------------------------------------*/
 @media (min-width: 991px) and (max-width: 1199px) {
+  .menu__btn {
+    display: none;
+  }
   .singlefolio .folioHover h4 {
     font-size: 16px;
   }
@@ -1119,6 +1138,9 @@
 / 4. Responsive For large Devices. like: laptops and other large screens that have a minimum 1200px resolution
 -----------------------------------------------------------------------------------------------------------*/
 @media (min-width: 1200px) and (max-width: 1600px) {
+  .menu__btn {
+    display: none;
+  }
   .rev_slider .tp-caption.layer_1 {
     top: 30px !important;
   }
@@ -1139,5 +1161,11 @@
   }
   .rev_slider.slider_2 .tp-caption.layer_3 {
     bottom: 78px !important;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+  .menu__btn {
+    display: none;
   }
 }

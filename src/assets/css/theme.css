@@ -196,11 +196,13 @@
   line-height: 0.8;
   font-size: 25px;
   margin: 0;
+  display: none;
 }
 .navigator .nav__quote-btn {
   font-size: 12px;
-  padding: 24px 33px;
+  padding: 24px;
   background: #e72c4a;
+  display: block;
 }
 .nav__quote-btn:after {
   background: black !important;
@@ -3098,12 +3100,13 @@ textarea.input-form:focus {
 .popUp_social {
   position: absolute;
   right: 0;
-  bottom: 34px;
-  padding: 0;
+  bottom: 58px !important;
+  padding: 20px;
 }
 .popUp_social ul {
   margin: 0;
   padding: 0;
+  display: flex;
 }
 .popUp_social ul li {
   padding: 0;
@@ -3123,12 +3126,12 @@ textarea.input-form:focus {
   text-align: left;
 }
 .popUp_social ul li a i {
-  font-size: 16px;
-  color: #fff;
+  font-size: 25px !important;
+  color: rgb(19, 48, 84);
   margin-right: 10px;
 }
 .show-overlay-nav .popup.popup__menu.popup__menu img {
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 .popUp_social ul li a:hover {
@@ -3172,11 +3175,12 @@ textarea.input-form:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   height: 100vh;
   transform: translateY(-100%);
   transition: all 0.6s 1000ms cubic-bezier(0.7, 0, 0.3, 1);
   width: 100%;
+  padding-top: 110px;
 }
 .show-popup .popup-inner,
 .show-overlay-nav .popup-inner {
@@ -3225,6 +3229,7 @@ textarea.input-form:focus {
   list-style: none;
   padding: 0;
   transform-style: preserve-3d;
+  text-align: left;
 }
 .dl-menu__wrap ul li {
   margin: 13px 0;
@@ -3232,7 +3237,7 @@ textarea.input-form:focus {
   display: block;
 }
 .dl-menu__wrap ul li a {
-  color: #333;
+  color: #133054;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 0.8;

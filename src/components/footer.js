@@ -52,6 +52,15 @@ const Footer = () => {
                     <i className="fa fa-facebook-square"></i>Facebook
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://www.yelp.com/biz/signature-coachworks-beaumont"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa fa-yelp"></i>Yelp
+                  </a>
+                </li>
               </ul>
             </aside>
           </div>
