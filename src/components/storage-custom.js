@@ -19,7 +19,7 @@ const StorageCustom = () => {
             }
           }
         }
-        whiteImage: file(relativePath: { eq: "white_bg.webp" }) {
+        whiteImage: file(relativePath: { eq: "storagepage-inside-min.jpeg" }) {
           id
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {

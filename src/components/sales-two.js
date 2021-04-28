@@ -1,14 +1,10 @@
 import React from "react";
-import { AboutTwoData } from "@/data";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link, graphql, useStaticQuery } from "gatsby";
-import BackgroundImage from "gatsby-background-image";
-import logo from "@/images/logo/logo-blue-min.png";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import "@/css/sales.css";
 
 const AboutTwo = () => {
-  const { sectionContent, button, gallery } = AboutTwoData;
   const data = useStaticQuery(
     graphql`
       query {
@@ -20,11 +16,18 @@ const AboutTwo = () => {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
+        innerBgImage: file(relativePath: { eq: "consignment-min.jpeg" }) {
+          id
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
       }
     `
   );
 
   const image = getImage(data.salesBgImage);
+  const innerBgImage = getImage(data.innerBgImage);
 
   return (
     <section className="commonSection ab_agency sales_two_section">
@@ -33,7 +36,7 @@ const AboutTwo = () => {
         alt="stormtrooper coach from signature coachworks"
         className="opaque__bg-image"
       />
-      <Container>
+      <Container style={{ position: "static" }}>
         <Row>
           <Col lg={6} md={12} sm={12} className="PR_79">
             <h4 className="sub_title">SALES</h4>
@@ -46,22 +49,18 @@ const AboutTwo = () => {
               <span>Search Inventory</span>
             </Link>
           </Col>
-          <Col lg={6} md={12} sm={12} className="sales__container">
-            <div className="sales__container-inner">
-              <h3>Available upgrades on all coach sales:</h3>
-              <ul>
-                <li>Put Upgrade Here</li>
-                <li>Put Upgrade Here</li>
-                <li>Put Upgrade Here</li>
-                <li>Put Upgrade Here</li>
-                <li>Put Upgrade Here</li>
-                <li>Put Upgrade Here</li>
-                <li>Put Upgrade Here</li>
-                <li>Put Upgrade Here</li>
-                <li>Put Upgrade Here</li>
-                <li>Put Upgrade Here</li>
-              </ul>
-            </div>
+          <Col lg={6} md={12} sm={12} className="about__image-container">
+            <GatsbyImage
+              image={innerBgImage}
+              alt="stormtrooper coach from signature coachworks"
+              className="about__image"
+            />
+            {/* <div className="sales__container-inner">
+              <h3>
+                Upgrades and repairs can be completed in house on all coach
+                sales
+              </h3>
+  </div> */}
           </Col>
         </Row>
       </Container>

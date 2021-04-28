@@ -13,6 +13,9 @@
 / 1. Mobile Responsive for iPhones, etc
 --------------------------------------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 767px) {
+  .storage_image {
+    margin-top: 1rem;
+  }
   .single-page__half-header:before {
     background-position: left !important;
   }
@@ -636,6 +639,9 @@
   .header__logo-mobile {
     display: block;
   }
+  .abci_content {
+    border-top-left-radius: 0;
+  }
 }
 
 /*------------------------------------------------------------------------------------
@@ -654,12 +660,18 @@
   .banner_content h2 {
     font-size: 44px;
   }
+  .abci_content {
+    border-top-left-radius: 0;
+  }
 }
 
 /*----------------------------------------------
 / 2. Tablet
 -----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 990px) {
+  .abci_content {
+    border-top-left-radius: 0;
+  }
   .popup-inner {
     justify-content: center;
     padding-top: 0;
@@ -973,6 +985,9 @@
 / 3. Responsive For Medium Devices
 ----------------------------------------------------------------------------*/
 @media (min-width: 991px) and (max-width: 1199px) {
+  .abci_content {
+    border-top-left-radius: 125px;
+  }
   .fixedHeader {
     display: initial;
   }

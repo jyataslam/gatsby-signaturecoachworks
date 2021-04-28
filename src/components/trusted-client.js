@@ -9,7 +9,7 @@ const TrustedClient = ({ extraClassName }) => {
   const data = useStaticQuery(
     graphql`
       query {
-        storageImage: file(relativePath: { eq: "storage-landing.jpg" }) {
+        storageImage: file(relativePath: { eq: "homepage-storage-min.jpeg" }) {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }

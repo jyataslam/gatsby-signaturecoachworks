@@ -34,7 +34,7 @@ const ContactInfos = () => {
           <div className="col-lg-6 col-sm-12 text-left location-section__text">
             <h4 className="sub_title">{subTitle}</h4>
             <h2 className="sec_title">{title}</h2>
-            <p className="sec_desc">{description}</p>
+            {/* <p className="sec_desc">{description}</p> */}
           </div>
         </div>
       </div>

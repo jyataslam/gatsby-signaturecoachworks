@@ -1,6 +1,6 @@
 import logoLight from "@/images/logo/logo-blue-min.png";
 import logoDark from "@/images/logo/signature-logo-blue-min.png";
-import logoFooter from "@/images/logo/logo-gradient-outline-white-min.png";
+import logoFooter from "@/images/logo/signature-logo-blue-min.png";
 
 export const LogoImage = {
   light: logoLight,
@@ -25,10 +25,10 @@ export const NavLinks = [
     name: "Storage",
     url: "/storage",
   },
-  {
-    name: "About",
-    url: "/about",
-  },
+  // {
+  //   name: "About",
+  //   url: "/about",
+  // },
   {
     name: "Contact",
     url: "/contact",

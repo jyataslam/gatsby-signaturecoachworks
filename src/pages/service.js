@@ -16,7 +16,7 @@ const ServicePage = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        shopImage: file(relativePath: { eq: "services-header-min.jpg" }) {
+        shopImage: file(relativePath: { eq: "services-header-dark-min.jpg" }) {
           id
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {

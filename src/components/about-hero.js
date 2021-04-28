@@ -9,7 +9,7 @@ const AboutTwo = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        aboutImg: file(relativePath: { eq: "hero-interior-min.jpg" }) {
+        aboutImg: file(relativePath: { eq: "homepage-about-min.jpeg" }) {
           id
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {
@@ -36,12 +36,12 @@ const AboutTwo = () => {
             /> */}
             <h2 className="sec_title MB_45">{sectionContent.title}</h2>
             <p className="sec_desc">{sectionContent.text}</p>
-            <Link
+            {/* <Link
               className="common_btn red_bg blue_bg on_white_bg"
               to={button.url}
             >
               <span>{button.label}</span>
-            </Link>
+            </Link> */}
           </Col>
           <Col lg={6} md={12} sm={12} className="about__image-container">
             <BackgroundImage className="about__image" fluid={aboutImage} />
