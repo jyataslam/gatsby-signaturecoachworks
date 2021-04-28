@@ -4,7 +4,7 @@ module.exports = {
     description: `Premier coach and RV sales and full service repair shop in Beaumont, CA.`,
     author: `@signaturecoachworks`,
     keywords: `rv repair shop, coach repair, rv repair shop near me, coach repair near me, rv mechanic, rv mechanic near me, coach repair near me, coach repair beaumont, beaumont repair shop, repair shop, coach sales, rv sales, coaches for sale`,
-    siteUrl: `https://signaturecoachworks.netlify.app`,
+    siteUrl: `https://signaturecoachworks.com/`,
     image: `src/images/coaches-hero-dark-2-min.jpg`,
   },
   plugins: [

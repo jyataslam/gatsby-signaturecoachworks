@@ -7,7 +7,7 @@ import Success from "@/components/success";
 
 const StoragePage = () => {
   return (
-    <Layout PageTitle="Storage">
+    <Layout PageTitle="Success">
       <HeaderOne />
       <Success />
       <Footer />
