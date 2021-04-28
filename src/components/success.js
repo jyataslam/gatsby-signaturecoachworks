@@ -7,7 +7,7 @@ const Success = () => {
     <div className="success">
       <h1>Thanks, your message has been sent!</h1>
       <p>We will get back to you within 24 hours.</p>
-      <Link to="/" className={`common_btn red_bg`}>
+      <Link to="/" className={`common_btn red_bg blue_bg`}>
         <span>Back To Home</span>
       </Link>
     </div>

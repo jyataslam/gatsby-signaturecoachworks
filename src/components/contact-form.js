@@ -10,7 +10,7 @@ const ContactForm = () => {
     l_name: "",
     email: "",
     phone: "",
-    con_message: "",
+    message: "",
   });
 
   const encode = data => {
@@ -113,11 +113,11 @@ const ContactForm = () => {
                 <div className="col-lg-12 col-sm-12">
                   <textarea
                     className="input-form required"
-                    name="con_message"
-                    id="con_message"
+                    name="message"
+                    id="message"
                     placeholder="Write Message"
                     onChange={handleChange}
-                    value={formState.con_message}
+                    value={formState.message}
                     required
                   ></textarea>
                 </div>
