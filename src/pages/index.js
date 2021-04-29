@@ -3,10 +3,10 @@ import Layout from "@/components/layout";
 import Quote from "@/components/quote";
 import Footer from "@/components/footer";
 import SalesTwo from "@/components/sales-two";
-import TrustedClient from "@/components/trusted-client";
+import StorageHome from "@/components/storage-home";
 import PortfolioHome from "@/components/portfolio-home";
 import ContactInfos from "@/components/contact-infos";
-import TestimonialsOneCarousel from "@/components/testimonials-carousel";
+import Testimonials from "@/components/testimonials-carousel";
 import ServiceTwo from "@/components/service-two";
 import About from "@/components/about-hero";
 import HeaderOne from "@/components/header-one";
@@ -32,8 +32,8 @@ const HomeOne = () => {
           <About />
           <ServiceTwo />
           <ContactInfos />
-          <TestimonialsOneCarousel />
-          <TrustedClient />
+          <Testimonials />
+          <StorageHome />
           <SalesTwo />
           <PortfolioHome />
           {/* <GoogleMap extraClass="contact-page" /> */}

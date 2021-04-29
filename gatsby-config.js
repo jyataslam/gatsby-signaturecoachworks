@@ -8,6 +8,7 @@ module.exports = {
     image: `src/images/coaches-hero-dark-2-min.jpg`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-background-image`,
     `gatsby-plugin-image`,

@@ -4,7 +4,7 @@ import { TrustClientData } from "@/data";
 import "../assets/css/trusted-client.css";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const TrustedClient = ({ extraClassName }) => {
+const StorageHome = ({ extraClassName }) => {
   const { title, text, url } = TrustClientData;
   const data = useStaticQuery(
     graphql`
@@ -33,7 +33,7 @@ const TrustedClient = ({ extraClassName }) => {
                       <h2>{title}</h2>
                       <p>{text}</p>
                       <Link
-                        to={url}
+                        to="/storage"
                         className="common_btn red_bg blue_bg on_white_bg"
                       >
                         <span>Explore Storage</span>
@@ -50,4 +50,4 @@ const TrustedClient = ({ extraClassName }) => {
   );
 };
 
-export default TrustedClient;
+export default StorageHome;
