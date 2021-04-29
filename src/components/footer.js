@@ -28,10 +28,13 @@ const Footer = () => {
                 <br />
                 BEAUMONT, CA 92223
               </p>
-              <a href="tel:+19518458056" className="color_aaa">
-                P: (951)845-8056
-              </a>
-              <p>
+              <p className="footer__links-larger">
+                P:{" "}
+                <a href="tel:+19518458056" className="color_aaa">
+                  (951)845-8056
+                </a>
+              </p>
+              <p className="footer__links-larger">
                 E:{" "}
                 <a href="mailto:info@signaturecoachworks.com">
                   info@signaturecoachworks.com
@@ -68,7 +71,10 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-12 col-sm-12 text-center">
             <div className="copyright">
-              © copyright {new Date().getFullYear()} <a>Signature Coachworks</a>
+              © copyright {new Date().getFullYear()}{" "}
+              <a href="https://www.signaturecoachworks.com" rel="noreferrer">
+                Signature Coachworks
+              </a>
             </div>
           </div>
         </div>

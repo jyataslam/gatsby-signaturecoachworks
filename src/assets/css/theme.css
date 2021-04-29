@@ -1411,6 +1411,9 @@
 /*----------------------------------------------------
 / 14. Footer Section
 ------------------------------------------------------*/
+.footer__links-larger {
+  padding: .6rem 0;
+}
 .footer_1 {
   position: relative;
   padding: 130px 0 0;
@@ -1456,6 +1459,7 @@
 .footer_1 .copyright a,
 .footer_1 .contact_widgets p a {
   color: #aaaaaa;
+  padding: 1rem 0;
 }
 .footer_1 .copyright a:hover,
 .footer_1 .contact_widgets p a:hover {
@@ -1481,6 +1485,7 @@
   margin: 0;
   display: block;
   text-align: left;
+  padding: .6rem 0;
 }
 .footer_1 .social_widget ul li a i {
   font-size: 16px;
