@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 
 const PortfolioCard = ({ data }) => {
-  console.log("card data", data);
   const {
     slug,
     title,

@@ -77,7 +77,7 @@ const PortfolioHome = () => {
                 .map((coach, index) => {
                   console.log("coach", coach);
                   return (
-                    <Col lg={4} md={6} sm={12} key={index}>
+                    <Col lg={6} md={6} sm={12} key={index}>
                       <PortfolioCard data={coach.node} />
                     </Col>
                   );

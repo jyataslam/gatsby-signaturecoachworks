@@ -13,6 +13,9 @@
 / 1. Mobile Responsive for iPhones, etc
 --------------------------------------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 767px) {
+  .singlefolio:after {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(2,102,165,0.3519782913165266) 70%, rgba(18,49,84,1) 75%);
+  }
   .storage_image {
     margin-top: 1rem;
   }
@@ -677,7 +680,7 @@
     padding-top: 0;
   }
   .singlefolio .folioHover h4 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .about__image-container {
     display: none;
@@ -995,7 +998,7 @@
     display: none;
   }
   .singlefolio .folioHover h4 {
-    font-size: 16px;
+    font-size: 20px;
   }
   .rev_slider .tp-leftarrow.me_arrows,
   .rev_slider .tp-rightarrow.me_arrows {

@@ -29,7 +29,7 @@ const ProtfolioDetails = ({ data }) => {
               <h3>{data.title}</h3>
               <h4 className="details__price">Current Price: ${data.price}</h4>
               <p>{data.miles} miles</p>
-              <p>{data.number}</p>
+              {!data.number ? "" : <p>{data.number}</p>}
               <div className="details-divider" />
               {data.commonDetails.map((item, index) => (
                 <>
@@ -39,12 +39,18 @@ const ProtfolioDetails = ({ data }) => {
               ))}
             </div>
             <div className="singlePortfoio_content">
-              <h4>The Coach Has The Following:</h4>
-              <ul>
-                {data.listDetails.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
+              {!data.listDetails ? (
+                ""
+              ) : (
+                <>
+                  <h4>The Coach Has The Following:</h4>
+                  <ul>
+                    {data.listDetails.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
             </div>
             <div className="singlePortfoio_content">
               <h4>Interested?</h4>
