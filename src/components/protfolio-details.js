@@ -55,15 +55,15 @@ const ProtfolioDetails = ({ data }) => {
             <div className="singlePortfoio_content">
               <h4>Interested?</h4>
               <p>
-                For additional information or sales please contact Valarie.
+                For additional information or sales please contact us today!
                 <div className="details-divider"></div>
                 Phone: <a href="tel:+19518458056">(951)845-8056</a>
                 <div className="details-divider"></div>
                 Email:{" "}
                 <a
-                  href={`mailto:valarie@signaturecoachworks.com?subject=${data.title}`}
+                  href={`mailto:info@signaturecoachworks.com?subject=${data.title}`}
                 >
-                  valarie@signaturecoachworks.com
+                  info@signaturecoachworks.com
                 </a>
               </p>
             </div>

@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
 const PageBanner = ({ title, name, image, bg }) => {
-  console.log(bg);
   return (
     <section className="pageBanner">
       <BackgroundImage

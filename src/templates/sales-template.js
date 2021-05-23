@@ -41,8 +41,7 @@ export const query = graphql`
   }
 `;
 
-const InventoryTemplate = ({ data }) => {
-  const { inventoryJson } = data;
+const InventoryTemplate = ({ data: { inventoryJson } }) => {
   const headerImg = inventoryJson.featuredImage.childImageSharp.fluid;
   const seoImg = inventoryJson.featuredImage.childImageSharp.fluid.src;
   return (
@@ -50,8 +49,8 @@ const InventoryTemplate = ({ data }) => {
       <SearchContextProvider>
         <Layout PageTitle={inventoryJson.title}>
           <SEO
-            title={data.inventoryJson.title}
-            description={data.inventoryJson.description}
+            title={inventoryJson.title}
+            description={inventoryJson.description}
             image={seoImg}
             url={inventoryJson.slug}
           />
