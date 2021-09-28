@@ -60,7 +60,6 @@ const InventoryFull = () => {
               }}
             >
               {inventoryArray
-                .filter((coach, index) => index < 3)
                 .map((coach, index) => {
                   console.log("coach", coach);
                   return (

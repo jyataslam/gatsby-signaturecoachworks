@@ -73,7 +73,7 @@ const PortfolioHome = () => {
                 )
                 )} */}
               {inventoryArray
-                .filter((coach, index) => index < 3)
+                .filter((coach, index) => index < 4)
                 .map((coach, index) => {
                   console.log("coach", coach);
                   return (
