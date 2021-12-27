@@ -18,10 +18,6 @@ export const NavLinks = [
     url: "/service",
   },
   {
-    name: "Sales",
-    url: "/sales",
-  },
-  {
     name: "Storage",
     url: "/storage",
   },

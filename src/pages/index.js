@@ -34,8 +34,8 @@ const HomeOne = () => {
           <ContactInfos />
           <Testimonials />
           <StorageHome />
-          <SalesTwo />
-          <PortfolioHome />
+          {/* <SalesTwo /> */}
+          {/* <PortfolioHome /> */}
           {/* <GoogleMap extraClass="contact-page" /> */}
           <Footer />
         </Layout>
